@@ -1,108 +1,129 @@
-name: John Doe
+name: Adriane James
 support_dark_mode: true
-star: true
+fork: false
 
 # Sidebar
 contact:
-  email: info@johndoe.com
-  github: johndoe
-  linkedin: johndoe
-  phone: 
+  email: adrianejames27@gmail.com
+  github: lonewanderer27
+  linkedin: jay-puzon
+  phone: "+639983082814"
   gitlab: 
-  twitter: 
+  twitter:  
 
 languages:
   - idiom: English
-  - idiom: Russian
-  - idiom: French
+  - idiom: Filipino
 
 education:
-  - degree: MSc in Informatics
-    time: 2014-2016
-    university: Ionian University
+  - degree: B.S. Computer Science
+    time: 2021-2025
+    university: Adamson University
 
-  - degree: BSc in Computer Science
-    time: 2010-2014
-    university: Ionian University
+  - degree: SHS - Computer Programming
+    time: 2019-2021
+    university: Santa Isabel College of Manila
+
+certificates:
+  - title: JavaScript Deep Dive
+    link: https://scrimba.com/certificate/u2Nz6eAV/gjavascript
+    website: Scrimba
+    time: "Nov 2022"
 
 skills:
-  - category: Backend
-    skill: 
-      - Go
-      - Rust
   - category: Frontend
-    skill:
+    skill: 
+      - HTML
+      - CSS / SASS
+      - Javascript / Typescript 
       - React
-      - Typescript
+      - NextJS
+      - Jekyll
+
+  - category: Backend
+    skill:
+      - Flask
+      - FastAPI
+      - Firebase
+      - NodeJS
+
+  - category: Desktop
+    skill:
+      - .NET Framework
+      - Java Swing
+      - Python PySimpleGUI
+
   - category: DevOps
     skill:
-      - Docker
-      - Kubernetes 
+      - Git
+      - Python
+      - GNU / Linux
 
 # Profile
 profile: |
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-  fugiat nulla pariatur.
+  Front-End Web Developer with 1 year of experience. Passionate about creating highly interactive web applications with responsive design on every device. 
+  A team player but can also work independently. Values efficiency and timeliness in assigned tasks. 
+  
+  </br></br>Seeking to leverage a broader development experience and hands-on expertise in a Front-End Developer role.
+  
 
 # Experience
 experience:
-  - role: Software Engineer
-    time: 2020-Present
-    company: Google
+  - role: Web Developer
+    time: June 2022 - Oct 2022
+    company: ABC-RMO Security and Investigation Agency Inc. (ARSIA)
     details: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-      fugiat nulla pariatur.
+      - Developed the agency's first website by creating a custom WordPress theme.</br>
+      - Utilized ACF plugin that allowed them to highly customize their website to their liking.</br>
+      - Built the website with mobile-first responsive approach that made transactions an ease for their employees and clients.</br>
+      - Optimized SEO that resulted in increased visibility and click-rate on Google.</br>
+      - Handled the migration from Yahoo Mail to a custom email solution, and training of their employees on how to use the new email system.</br>
     technologies_used: | 
-      Go, Angular, Typescript, C++
-  
-  - role: Researcher
-    time: 2016-2020
-    company: Microsoft
+      HTML, CSS, Bootstrap, JavaScript, PHP, WordPress
+
+  - role: Web Developer
+    time: Nov 2022 - Present
+    company: OMP Security
     details: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-      fugiat nulla pariatur.
+      - Developed the agency's first website by creating a custom WordPress theme.</br>
+      - Utilized ACF plugin that allowed them to highly customize their website to their liking.</br>
+      - Built the website with mobile-first responsive approach that made transactions an ease for their employees and clients.</br>
+      - Optimized SEO that resulted in increased visibility and click-rate on Google.</br>
+      - Handled the migration from Gmail to a custom email solution, and training of their employees on how to use the new email system.</br>
     technologies_used: | 
-      Python, Tensorflow, Keras, Matlab
+      HTML, CSS, Bootstrap, JavaScript, PHP, WordPress
 
-publications:
-  - title: Random title of paper. An interesting one.
-    link: "#"
-    authors: John E. Doe
-    conference: Some conference, 2016
+# publications:
+#   - title: Random title of paper. An interesting one.
+#     link: "#"
+#     authors: John E. Doe
+#     conference: Some conference, 2016
 
-  - title: Second title of paper. An interesting one too.
-    link: "#"
-    authors: John E. Doe
-    conference: Some conference again, 2018
+#   - title: Second title of paper. An interesting one too.
+#     link: "#"
+#     authors: John E. Doe
+#     conference: Some conference again, 2018
 
 projects:
-  - title: Cool Project 
-    link: #
-    details: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua.
+  - title: The Coffee Lounge
+    link: https://the-coffee-lounge.pages.dev
+    details: |  
+      Coffee Shop web app featuring a unique 3D View that allows our customers to virtually visit the cafe and order coffee, using their mobile phone.
 
-  - title: Cool Project 
-    link: #
+  - title: Web Browser Botseu
+    link: https://lonewanderer27.github.io/web-browser-botseu
     details: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua.
+      Chatbot that enable users to search, find and read articles in Facebook Messenger for free.
 
-# Volunteering
+  - title: JAMMA
+    link: https://jamma-site.cf
+    details: |
+      E-Commerce website that sells specialized workout gadgets. Built with Flask and uses Firebase as the back-end.
+
 volunteering:
-  - time: 2020-Present
-    role: PR Manager
-    company: Some random organization
+  - time: 2022 - Present
+    role: Ionic React Developer
+    company: Filipino Web Development Peers (FWDP)
     details: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+      I was one of the key developers in creating a learning management application using Ionic React for FWD. 
+      Also helped in developing the infrastructure of the app across the stack.
