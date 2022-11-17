@@ -1,6 +1,6 @@
 # My Resume | Jekyll
 
-Copyright © 2022 Adriane James
+Copyright © 2022 Adriane James </br>
 Developed and Designed by [Stavrospanakakis](https://github.com/Stavrospanakakis)
 
 ## Features
