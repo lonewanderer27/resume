@@ -1,4 +1,4 @@
-# My CV | Jekyll
+# My Resume | Jekyll
 
 Copyright © 2022 Adriane James
 Developed and Designed by [Stavrospanakakis](https://github.com/Stavrospanakakis)
