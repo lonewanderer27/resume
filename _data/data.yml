@@ -73,10 +73,11 @@ experience:
     time: June 2022 - Oct 2022
     company: ABC-RMO Security and Investigation Agency Inc. (ARSIA)
     details: |
-      - Developed the agency's first website by creating a custom WordPress theme.</br>
-      - Utilized ACF plugin that allowed them to highly customize their website to their liking.</br>
-      - Built the website with mobile-first responsive approach that made transactions an ease for their employees and clients.</br>
-      - Optimized SEO that resulted in increased visibility and click-rate on Google.</br>
+      - Developed the agency's website by creating a custom WordPress theme.</br>
+      - Utilized ACF plugin that allowed highly customizability of the website.</br>
+      - Implemented Job Application Form where potential employees of the agency can apply.</br>
+      - Built the website with mobile-first responsive approach that made the site accessible on phones and desktop.</br>
+      - Optimized all pages to be SEO friendly, resulting in increased visibility and click-rate on Google.</br>
       - Handled the migration from Yahoo Mail to a custom email solution, and training of their employees on how to use the new email system.</br>
     technologies_used: | 
       HTML, CSS, Bootstrap, JavaScript, PHP, WordPress
@@ -84,11 +85,12 @@ experience:
   - role: Web Developer
     time: Nov 2022 - Present
     company: OMP Security
+    sister_company: ARSIA
     details: |
-      - Developed the agency's first website by creating a custom WordPress theme.</br>
-      - Utilized ACF plugin that allowed them to highly customize their website to their liking.</br>
-      - Built the website with mobile-first responsive approach that made transactions an ease for their employees and clients.</br>
-      - Optimized SEO that resulted in increased visibility and click-rate on Google.</br>
+      - Extended ARSIA's website and added new features.</br>
+      - Implemented form where agency employees can update their information.</br>
+      - Built the website with mobile-first responsive approach that made the site accessible on phones and desktop.</br>
+      - Optimized all pages to be SEO friendly, resulting in increased visibility and click-rate on Google.</br>
       - Handled the migration from Gmail to a custom email solution, and training of their employees on how to use the new email system.</br>
     technologies_used: | 
       HTML, CSS, Bootstrap, JavaScript, PHP, WordPress
