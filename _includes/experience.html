@@ -9,12 +9,15 @@
             </div>
             <div class="company">
                 {{exp.company}} 
+                {% if exp.sister_company %}
+                </br>
+                <span class="sister_company">Sister Company: {{exp.sister_company}}</span>
+                {% endif %}
                 <span class="time">{{exp.time}}</span>
             </div> 
             <div class="details">{{exp.details}}</div>
             <p class="technologies">Technologies Used: {{exp.technologies_used}}</p>
         </div>
-       
     {% endfor %}
 </section>
 {% endif %}

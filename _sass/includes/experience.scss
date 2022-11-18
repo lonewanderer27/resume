@@ -9,6 +9,9 @@
         .company {
             @include body-text;
             font-weight: bold;
+            .sister_company {
+                color: var(--fg-color-title-sm);
+            }
             .time {
                 float: right;
                 color: var(--fg-color-title-sm);
