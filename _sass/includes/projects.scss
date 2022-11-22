@@ -4,10 +4,14 @@
     }
     .project {
         margin-bottom: 20px;
+        .project-title {
+            color: var(--fg-color);
+            font-weight: 700;
+        }
         .project-link {
             @include body-text;
         }
-        .details {
+        .project-details {
             @include body-text;
         }
     }
