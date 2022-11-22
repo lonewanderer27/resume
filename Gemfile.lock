@@ -33,6 +33,7 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
+    jekyll-email-protect (1.1.0)
     jekyll-minifier (0.1.10)
       cssminify2 (~> 2.0)
       htmlcompressor (~> 0.4)
@@ -78,6 +79,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
+  jekyll-email-protect (~> 1.1)
   jekyll-minifier (= 0.1.10)
   webrick
 

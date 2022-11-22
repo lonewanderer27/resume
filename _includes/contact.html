@@ -5,8 +5,8 @@
     {% if contact.email %}
         <div class="contact-item">
             <i data-feather="mail"></i>
-            <a href="mailto:{{contact.email}}">
-                {{contact.email}}
+            <a href="mailto:{{contact.email | encode_email }}">
+                {{ contact.email }}
             </a>
         </div>
     {% endif %}

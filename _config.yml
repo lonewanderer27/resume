@@ -11,6 +11,7 @@ sass:
 
 plugins:
     - jekyll-minifier
+    - jekyll-email-protect
 
 exclude:
   - docker-compose.yml
