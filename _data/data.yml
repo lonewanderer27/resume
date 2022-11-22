@@ -74,11 +74,11 @@ experience:
     company: ABC-RMO Security and Investigation Agency Inc. (ARSIA)
     details: |
       - Developed the agency's website by creating a custom WordPress theme.</br>
-      - Utilized ACF plugin that allowed highly customizability of the website.</br>
-      - Implemented Job Application Form where potential employees of the agency can apply.</br>
-      - Built the website with mobile-first responsive approach that made the site accessible on phones and desktop.</br>
-      - Optimized all pages to be SEO friendly, resulting in increased visibility and click-rate on Google.</br>
-      - Handled the migration from Yahoo Mail to a custom email solution, and training of their employees on how to use the new email system.</br>
+      - Included admin dashboard that allowed the website to be customizable.</br>
+      - Implemented Job Application Form where applicants can apply.</br>
+      - Built the website with responsive approach that can be accessed on phones and desktops.</br>
+      - Optimized pages for SEO, that resulted in increased visibility and click-rate on Google.</br>
+      - Handled migration from Yahoo Mail to a custom email, and training of employees on admin dashboard.</br>
     technologies_used: | 
       HTML, CSS, Bootstrap, JavaScript, PHP, WordPress
 
@@ -89,9 +89,8 @@ experience:
     details: |
       - Extended ARSIA's website and added new features.</br>
       - Implemented form where agency employees can update their information.</br>
-      - Built the website with mobile-first responsive approach that made the site accessible on phones and desktop.</br>
-      - Optimized all pages to be SEO friendly, resulting in increased visibility and click-rate on Google.</br>
-      - Handled the migration from Gmail to a custom email solution, and training of their employees on how to use the new email system.</br>
+      - Built the website with responsive approach that can be accessed on phones and desktops.</br>
+      - Handled migration from Yahoo Mail to a custom email, and training of employees on admin dashboard.</br>
     technologies_used: | 
       HTML, CSS, Bootstrap, JavaScript, PHP, WordPress
 
