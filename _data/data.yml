@@ -35,17 +35,26 @@ skills:
     skill: 
       - HTML
       - CSS / SASS
+      - Bootstrap
+      - Tailwind CSS
       - Javascript / Typescript 
-      - React
-      - NextJS
       - Jekyll
+
+  - category: React
+    skill:
+      - Axios
+      - Redux
+      - React Query
+      - NextJS
 
   - category: Backend
     skill:
       - Flask
       - FastAPI
-      - Firebase
       - NodeJS
+      - Express
+      - MongoDB
+      - Firebase
 
   - category: Desktop
     skill:
@@ -71,28 +80,41 @@ profile: |
 experience:
   - role: Web Developer
     time: June 2022 - Oct 2022
-    company: ABC-RMO Security and Investigation Agency Inc. (ARSIA)
+    company: ABC-RMO Security and Investigation Agency Inc.  | Freelance
     details: |
       - Developed the agency's website by creating a custom WordPress theme.</br>
       - Included admin dashboard that allowed the website to be customizable.</br>
       - Implemented Job Application Form where applicants can apply.</br>
-      - Built the website with responsive approach that can be accessed on phones and desktops.</br>
+      - Built the website with responsive approach so it can be accessed on phones and desktops.</br>
       - Optimized pages for SEO, that resulted in increased visibility and click-rate on Google.</br>
-      - Handled migration from Yahoo Mail to a custom email, and training of employees on admin dashboard.</br>
+      - Handled migration from Yahoo Mail to a custom email solution.</br>
+      - Trained company employees on how to operate the admin dashboard.</br>
     technologies_used: | 
       HTML, CSS, Bootstrap, JavaScript, PHP, WordPress
 
   - role: Web Developer
     time: Nov 2022 - Present
     company: OMP Security
-    sister_company: ARSIA
+    sister_company: ARSIA | Freelance
     details: |
       - Extended ARSIA's website and added new features.</br>
       - Implemented form where agency employees can update their information.</br>
-      - Built the website with responsive approach that can be accessed on phones and desktops.</br>
-      - Handled migration from Yahoo Mail to a custom email, and training of employees on admin dashboard.</br>
+      - Handled migration from Yahoo Mail to a custom email solution.</br>
+      - Trained company employees on how to operate the admin dashboard.</br>
     technologies_used: | 
       HTML, CSS, Bootstrap, JavaScript, PHP, WordPress
+
+  - role: Junior Front End Web Developer
+    time: November 24 2022 - Present
+    company: Freelance | Part-Time
+    details: |
+      - Designed and worked on 2 front-end and back-end applications utilizing React and Express.</br>
+      - Developed user interfaces using a mix of Tailwind CSS and Bootstrap components.</br>
+      - Implemented a company dashboard that allowed gift cards to be sent and received.</br>
+      - Worked on social media platform features such as commenting, liking, sharing and tagging.</br>
+      - Improved my team-work skills by working in collaboration with 3 full-stack developers.</br>
+    technologies_used: |
+      HTML, SASS, Bootstrap, Material UI, React, Redux, Express, MongoDB
 
 # publications:
 #   - title: Random title of paper. An interesting one.
@@ -121,10 +143,10 @@ projects:
     details: |
       E-Commerce website that sells specialized workout gadgets. Built with Flask and uses Firebase as the back-end.
 
-volunteering:
-  - time: 2022 - Present
-    role: Ionic React Developer
-    company: Filipino Web Development Peers (FWDP)
-    details: |
-      I was one of the key developers in creating a learning management application using Ionic React for FWD. 
-      Also helped in developing the infrastructure of the app across the stack.
+# volunteering:
+#   - time: 2022 - Present
+#     role: Ionic React Developer
+#     company: Filipino Web Development Peers (FWDP)
+#     details: |
+#       I was one of the key developers in creating a learning management application using Ionic React for FWD. 
+#       Also helped in developing the infrastructure of the app across the stack.
