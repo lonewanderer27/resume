@@ -93,7 +93,7 @@ experience:
       HTML, CSS, Bootstrap, JavaScript, PHP, WordPress
 
   - role: Web Developer
-    time: Nov 2022 - Present
+    time: Nov 2022 - Jan 2023
     company: OMP Security
     sister_company: ARSIA | Freelance
     details: |
@@ -104,8 +104,8 @@ experience:
     technologies_used: | 
       HTML, CSS, Bootstrap, JavaScript, PHP, WordPress
 
-  - role: Junior Front End Web Developer
-    time: November 24 2022 - Present
+  - role: Front End Web Developer
+    time: November 24 2022 - Feb 2023
     company: Freelance | Part-Time
     details: |
       - Designed and worked on 2 front-end and back-end applications utilizing React and Express.</br>
@@ -129,9 +129,9 @@ experience:
 
 projects:
   - title: The Coffee Lounge
-    link: https://the-coffee-lounge.pages.dev
+    link: https://the-coffee-lounge-app.vercel.app
     details: |  
-      Coffee Shop web app featuring a unique 3D View that allows our customers to virtually visit the cafe and order coffee, using their mobile phone.
+      The Coffee Lounge is an E-commerce coffee app built with Ionic React. It features a unique 3D View that allows our customers to virtually visit the cafe, using only their mobile phone.
 
   - title: Web Browser Botseu
     link: https://lonewanderer27.github.io/web-browser-botseu
@@ -139,9 +139,9 @@ projects:
       Chatbot that enable users to search, find and read articles in Facebook Messenger for free.
 
   - title: JAMMA
-    link: https://jamma-site.cf
+    link: https://jamma-shop.vercel.app
     details: |
-      E-Commerce website that sells specialized workout gadgets. Built with Flask and uses Firebase as the back-end.
+      E-Commerce website that resells workout gadgets. Built with React and uses Supabase as the back-end.
 
 # volunteering:
 #   - time: 2022 - Present
