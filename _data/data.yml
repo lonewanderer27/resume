@@ -37,9 +37,10 @@ skills:
   - category: Backend
     skill:
       - Express
-      - Flask
       - FastAPI
-  - category: Mobile App Dev
+      - Flask
+      
+  - category: Mobile App
     skill:
       - Ionic React
       - Android Studio
@@ -49,60 +50,52 @@ skills:
       - Firebase
       - MySQL
       - PostgreSQL
-
-  - category: Desktop
-    skill:
-      - .NET Framework
-      - Python PySimpleGUI
-
+      
   - category: DevOps
     skill:
       - Linux
       - Git
-      - Python
+      - Github Actions for CI/CD
 
 # Profile
 profile: |
   As a Front-End Web Developer with one year of experience, I am passionate about creating highly interactive web applications with responsive design on every device. I am also a team player who can also work independently, and I value efficiency and timeliness in all assigned tasks.
-  <br><br>
-  I am currently seeking to leverage my broad development experience and hands-on expertise in a Front-End Developer role.
   
 
 # Experience
 experience:
-  - role: Web Developer
+  - role: PHP Developer
     time: June 2022 - Oct 2022
     company: ARSIA Inc.
+    company_url: https://abcrmosecurity.com
     details:
       - Developed an admin interface that allows for the publication of security announcements.
       - Implemented a Job Application Form where applicants can apply.
       - Built the website with a responsive approach to ensure accessibility on both mobile and desktop devices.
       - Improved the agency's visibility and click-rate on Google.
       - Handled the migration from Yahoo Mail to a custom email solution.
-      - Trained company employees on how to operate the admin dashboard.
-    technologies_used: | 
-      PHP, WordPress, HTML, CSS, Bootstrap, JavaScript
-
-  - role: Web Developer
-    time: Nov 2022 - Jan 2023
-    company: OMP Security
-    sister_company: ABC-RMO Security and Investigation Agency Inc.
-    details:
-      - Developed a form for agency employees to update their personal information.
-      - Successfully migrated the company's email system from Yahoo Mail to a custom email solution.
       - Conducted training sessions for company employees on how to effectively operate the admin dashboard.
     technologies_used: | 
       PHP, WordPress, HTML, CSS, Bootstrap, JavaScript
 
-  - role: Front End Web Developer
-    time: November 24 2022 - Feb 2023
-    company: Freelance | Part-Time
+  - role: PHP Developer
+    time: Nov 2022 - Jan 2023
+    company: OMP Security
+    company_url: https://ompsecurity.com
+    sister_company: ABC-RMO Security and Investigation Agency Inc.
     details:
-      - Developed features for two full-stack React applications.
-      - Created user interfaces using a combination of Tailwind CSS and Bootstrap components.
+      - Developed a form for agency employees to update their personal information.
+      - Successfully migrated the company's email system from Yahoo Mail to a custom email solution.
+    technologies_used: | 
+      PHP, WordPress, HTML, CSS, Bootstrap, JavaScript
+
+  - role: React Developer
+    time: November 24 2022 - Feb 2023
+    company: Part-Time
+    details:
       - Implemented a company dashboard that enabled the sending and receiving of gift cards.
-      - Contributed to social media platform features such as commenting, liking, sharing, and tagging.
-      - Collaborated with three full-stack developers to improve teamwork skills and project outcomes.
+      - Contributed to social media platform features such as commenting, liking and tagging.
+      - Collaborated with three full-stack developers that improved my teamwork skills.
     technologies_used: |
       MongoDB, Express, React, SASS, Material UI
 
