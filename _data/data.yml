@@ -8,8 +8,6 @@ contact:
   github: lonewanderer27
   linkedin: jay-puzon
   phone: "+639983082814"
-  gitlab: 
-  twitter:  
 
 languages:
   - idiom: English
@@ -17,12 +15,7 @@ languages:
 
 education:
   - degree: B.S. Computer Science
-    time: 2021-2025
     university: Adamson University
-
-  - degree: SHS - Computer Programming
-    time: 2019-2021
-    university: Santa Isabel College of Manila
 
 certificates:
   - title: JavaScript Deep Dive
@@ -33,88 +26,85 @@ certificates:
 skills:
   - category: Frontend
     skill: 
-      - HTML
-      - CSS / SASS
+      - React / NextJS
+      - SvelteKit
+      - HTML5, CSS / SASS
       - Bootstrap
-      - Tailwind CSS
-      - Javascript / Typescript 
+      - Tailwind
+      - Typescript / Javascript
       - Jekyll
-
-  - category: React
-    skill:
-      - Axios
-      - Redux
-      - React Query
-      - NextJS
 
   - category: Backend
     skill:
+      - Express
       - Flask
       - FastAPI
-      - NodeJS
-      - Express
-      - MongoDB
+  - category: Mobile App Dev
+    skill:
+      - Ionic React
+      - Android Studio
+
+  - category: Database
+    skill:
       - Firebase
+      - MySQL
+      - PostgreSQL
 
   - category: Desktop
     skill:
       - .NET Framework
-      - Java Swing
       - Python PySimpleGUI
 
   - category: DevOps
     skill:
+      - Linux
       - Git
       - Python
-      - GNU / Linux
 
 # Profile
 profile: |
-  Front-End Web Developer with 1 year of experience. Passionate about creating highly interactive web applications with responsive design on every device. 
-  A team player but can also work independently. Values efficiency and timeliness in assigned tasks. 
-  
-  </br></br>Seeking to leverage a broader development experience and hands-on expertise in a Front-End Developer role.
+  As a Front-End Web Developer with one year of experience, I am passionate about creating highly interactive web applications with responsive design on every device. I am also a team player who can also work independently, and I value efficiency and timeliness in all assigned tasks.
+  <br><br>
+  I am currently seeking to leverage my broad development experience and hands-on expertise in a Front-End Developer role.
   
 
 # Experience
 experience:
   - role: Web Developer
     time: June 2022 - Oct 2022
-    company: ABC-RMO Security and Investigation Agency Inc.  | Freelance
-    details: |
-      - Developed the agency's website by creating a custom WordPress theme.</br>
-      - Included admin dashboard that allowed the website to be customizable.</br>
-      - Implemented Job Application Form where applicants can apply.</br>
-      - Built the website with responsive approach so it can be accessed on phones and desktops.</br>
-      - Optimized pages for SEO, that resulted in increased visibility and click-rate on Google.</br>
-      - Handled migration from Yahoo Mail to a custom email solution.</br>
-      - Trained company employees on how to operate the admin dashboard.</br>
+    company: ARSIA Inc.
+    details:
+      - Developed an admin interface that allows for the publication of security announcements.
+      - Implemented a Job Application Form where applicants can apply.
+      - Built the website with a responsive approach to ensure accessibility on both mobile and desktop devices.
+      - Improved the agency's visibility and click-rate on Google.
+      - Handled the migration from Yahoo Mail to a custom email solution.
+      - Trained company employees on how to operate the admin dashboard.
     technologies_used: | 
-      HTML, CSS, Bootstrap, JavaScript, PHP, WordPress
+      PHP, WordPress, HTML, CSS, Bootstrap, JavaScript
 
   - role: Web Developer
     time: Nov 2022 - Jan 2023
     company: OMP Security
-    sister_company: ARSIA | Freelance
-    details: |
-      - Extended ARSIA's website and added new features.</br>
-      - Implemented form where agency employees can update their information.</br>
-      - Handled migration from Yahoo Mail to a custom email solution.</br>
-      - Trained company employees on how to operate the admin dashboard.</br>
+    sister_company: ABC-RMO Security and Investigation Agency Inc.
+    details:
+      - Developed a form for agency employees to update their personal information.
+      - Successfully migrated the company's email system from Yahoo Mail to a custom email solution.
+      - Conducted training sessions for company employees on how to effectively operate the admin dashboard.
     technologies_used: | 
-      HTML, CSS, Bootstrap, JavaScript, PHP, WordPress
+      PHP, WordPress, HTML, CSS, Bootstrap, JavaScript
 
   - role: Front End Web Developer
     time: November 24 2022 - Feb 2023
     company: Freelance | Part-Time
-    details: |
-      - Designed and worked on 2 front-end and back-end applications utilizing React and Express.</br>
-      - Developed user interfaces using a mix of Tailwind CSS and Bootstrap components.</br>
-      - Implemented a company dashboard that allowed gift cards to be sent and received.</br>
-      - Worked on social media platform features such as commenting, liking, sharing and tagging.</br>
-      - Improved my team-work skills by working in collaboration with 3 full-stack developers.</br>
+    details:
+      - Developed features for two full-stack React applications.
+      - Created user interfaces using a combination of Tailwind CSS and Bootstrap components.
+      - Implemented a company dashboard that enabled the sending and receiving of gift cards.
+      - Contributed to social media platform features such as commenting, liking, sharing, and tagging.
+      - Collaborated with three full-stack developers to improve teamwork skills and project outcomes.
     technologies_used: |
-      HTML, SASS, Bootstrap, Material UI, React, Redux, Express, MongoDB
+      MongoDB, Express, React, SASS, Material UI
 
 # publications:
 #   - title: Random title of paper. An interesting one.
@@ -129,19 +119,19 @@ experience:
 
 projects:
   - title: The Coffee Lounge
-    link: https://the-coffee-lounge-app.vercel.app
+    link: https://the-coffee-lounge.web.app
     details: |  
-      The Coffee Lounge is an E-commerce coffee app built with Ionic React. It features a unique 3D View that allows our customers to virtually visit the cafe, using only their mobile phone.
+      The Coffee Lounge is an e-commerce coffee application developed using Ionic React. It boasts a unique 3D View feature that enables customers to virtually visit the cafe using only their mobile phones. The app was built using Firebase. 
+
+  - title: JAMMA
+    link: https://jamma-shop.vercel.app
+    details: |
+      A comprehensive platform designed to cater to the needs of Multimedia Arts students. Developed using React and powered by Supabase.
 
   - title: Web Browser Botseu
     link: https://lonewanderer27.github.io/web-browser-botseu
     details: |
       Chatbot that enable users to search, find and read articles in Facebook Messenger for free.
-
-  - title: JAMMA
-    link: https://jamma-shop.vercel.app
-    details: |
-      E-Commerce website that resells workout gadgets. Built with React and uses Supabase as the back-end.
 
 # volunteering:
 #   - time: 2022 - Present
