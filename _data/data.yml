@@ -121,10 +121,15 @@ projects:
     details: |
       A comprehensive platform designed to cater to the needs of Multimedia Arts students. Developed using React and powered by Supabase.
 
-  - title: Web Browser Botseu
-    link: https://lonewanderer27.github.io/web-browser-botseu
+  - title: OMP Security
+    link: https://ompsecurity.com
     details: |
-      Chatbot that enable users to search, find and read articles in Facebook Messenger for free.
+      Official website of OMP Security. Developed using WordPress, PHP, Bootstrap, and JavaScript.
+
+  # - title: Web Browser Botseu
+  #   link: https://lonewanderer27.github.io/web-browser-botseu
+  #   details: |
+  #     Chatbot that enable users to search, find and read articles in Facebook Messenger for free.
 
 # volunteering:
 #   - time: 2022 - Present
