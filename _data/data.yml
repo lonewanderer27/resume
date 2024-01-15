@@ -112,7 +112,7 @@ experience:
 
 projects:
   - title: The Coffee Lounge
-    link: https://the-coffee-lounge.web.app
+    link: https://coffee-lounge.vercel.app
     details: |  
       The Coffee Lounge is an e-commerce coffee application developed using Ionic React. It boasts a unique 3D View feature that enables customers to virtually visit the cafe using only their mobile phones. The app was built using Firebase. 
 
