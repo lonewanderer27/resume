@@ -65,6 +65,17 @@ profile: |
 # Experience
 experience:
   - role: PHP Developer
+    time: Nov 2022 - Jan 2023
+    company: OMP Security
+    company_url: https://ompsecurity.com
+    sister_company: ABC-RMO Security and Investigation Agency Inc.
+    details:
+      - Developed a form for agency employees to update their personal information.
+      - Successfully migrated the company's email system from Yahoo Mail to a custom email solution.
+    technologies_used: | 
+      PHP, WordPress, HTML, CSS, Bootstrap, JavaScript
+
+  - role: PHP Developer
     time: June 2022 - Oct 2022
     company: ARSIA Inc.
     company_url: https://abcrmosecurity.com
@@ -75,17 +86,6 @@ experience:
       - Improved the agency's visibility and click-rate on Google.
       - Handled the migration from Yahoo Mail to a custom email solution.
       - Conducted training sessions for company employees on how to effectively operate the admin dashboard.
-    technologies_used: | 
-      PHP, WordPress, HTML, CSS, Bootstrap, JavaScript
-
-  - role: PHP Developer
-    time: Nov 2022 - Jan 2023
-    company: OMP Security
-    company_url: https://ompsecurity.com
-    sister_company: ABC-RMO Security and Investigation Agency Inc.
-    details:
-      - Developed a form for agency employees to update their personal information.
-      - Successfully migrated the company's email system from Yahoo Mail to a custom email solution.
     technologies_used: | 
       PHP, WordPress, HTML, CSS, Bootstrap, JavaScript
 
