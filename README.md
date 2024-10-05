@@ -1,7 +1,7 @@
 # My Resume | Astro
 
 Copyright © 2024 Adriane James </br>
-Original Jekyll developed and designed by [Stavrospanakakis](https://github.com/Stavrospanakakis) 
+Originally developed and designed by [Stavrospanakakis](https://github.com/Stavrospanakakis) </br>
 Astro version developed and improved by [lonewanderer27](https://github.com/lonewanderer27)
 
 
