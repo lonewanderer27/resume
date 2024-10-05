@@ -1,47 +1,68 @@
-# Astro Starter Kit: Minimal
+# My Resume | Astro
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Copyright © 2024 Adriane James </br>
+Original Jekyll developed and designed by [Stavrospanakakis](https://github.com/Stavrospanakakis) 
+Astro version developed and improved by [lonewanderer27](https://github.com/lonewanderer27)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Features
+- Lightweight
+- Free & Open Source
+- Mobile Responsive
+- Dark Mode Support
 
-## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+## Project Structure
+
+Inside of this project, you'll see the following folders and files:
 
 ```text
 /
 ├── public/
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── components/
+│   │   ├── CareerProfile.astro
+│   │   ├── Certificates.astro
+│   │   ├── Contact.astro
+│   │   ├── Education.astro
+│   │   ├── Experience.astro
+│   │   ├── Head.astro
+│   │   ├── Header.astro
+│   │   ├── Languages.astro
+│   │   ├── Projects.astro
+│   │   ├── Publications.astro
+│   │   ├── Skills.astro
+│   │   └── Volunteering.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   ├── pages/
+│   │   └── index.astro
+│   ├── styles/
+│   │   └── mixins.scss
+│   ├── data.ts
+│   └── types.ts
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Site configuration is contained in data.ts, just change a value and Astro will rebuild the site for you. 
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+All available fields and their types can be seen in types.ts
 
-Any static assets, like images, can be placed in the `public/` directory.
+Markup, styling and script files are contained in their respective astro component.
 
-## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
+## Commands
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
 | `npm install`             | Installs dependencies                            |
 | `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run build`           | Build production site to `./dist/`               |
+| `npm run preview`         | Preview build locally, before deploying          |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Preview
+![Preview](./preview.png)
+![Preview Dark](./preview-dark.png)
