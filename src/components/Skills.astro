@@ -1,0 +1,33 @@
+---
+import type { Skill } from "../types";
+
+const { skills } = Astro.props as { skills: Skill[] };
+---
+
+{skills && (
+  <section class="skills">
+    {skills.map((sks) => (
+      <div>
+        <div class="title">{sks.category}</div>
+        {sks.skills.map((sk) => (
+          <div class="skill">
+            {sk}
+          </div>
+        ))}
+      </div>
+    ))}
+  </section>
+)}
+
+<style lang="scss">
+.skills {
+    margin-bottom: 20px;
+    .title {
+        margin-top: 20px;
+        @include sub-header;
+    }
+    .skill {
+        @include body-text;
+    }
+}
+</style>

@@ -1,0 +1,50 @@
+---
+import type { Volunteering } from "../types";
+
+const { volunteering } = Astro.props as { volunteering: Volunteering[] };
+---
+
+{volunteering && (
+  <section class="volunteering">
+    <h2 class="title">Volunteering</h2>
+    {volunteering.map((vol) => (
+      <div class="volunteering-item">
+        <div class="role">{vol.role}</div>
+        <div class="organization">
+          {vol.company}
+          <span class="time">
+            {/* Display startDate only if it exists */}
+          <span class="time">{vol.startDate ? `${vol.startDate} - `: ""} {vol.endDate}</span>
+          </span>
+        </div>
+        <div class="details">{vol.details.join(', ')}</div>
+      </div>
+    ))}
+  </section>
+)}
+
+<style lang="scss">
+.volunteering {
+    .title {
+        @include header;
+    }
+    .volunteering-item {
+        margin-bottom: 20px;
+        .role {
+            @include sub-header;
+        }
+        .organization {
+            @include body-text;
+            font-weight: bold;
+            .time {
+                float: right;
+                color: var(--fg-color-title-sm);
+                font-weight: 100;
+            }
+        }
+        .details {
+            @include body-text;
+        }
+    }
+}
+</style>

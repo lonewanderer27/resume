@@ -1,0 +1,40 @@
+---
+import type { Project } from "../types";
+const { projects } = Astro.props as { projects: Project[] };
+---
+
+{projects && (
+  <section class="projects">
+    <h2 class="title">Notable Projects</h2>
+    {projects.map((p) => (
+      <div class="project">
+        <span class="project-title">{p.title}</span><br/>
+        <span>
+          <a class="project-link" href={p.link}>{p.link}</a>
+        </span><br/>
+        <span class="project-details">{p.details}</span>
+      </div>
+    ))}
+  </section>
+)}
+
+<style lang="scss">
+.projects {
+    .title {
+        @include header;
+    }
+    .project {
+        margin-bottom: 20px;
+        .project-title {
+            color: var(--fg-color);
+            font-weight: 700;
+        }
+        .project-link {
+            @include body-text;
+        }
+        .project-details {
+            @include body-text;
+        }
+    }
+}
+</style>

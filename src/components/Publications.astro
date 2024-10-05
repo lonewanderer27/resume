@@ -1,0 +1,50 @@
+---
+import type { Publication } from "../types";
+
+const { publications } = Astro.props as { publications: Publication[] };
+---
+
+{publications && (
+  <section class="publications">
+    <h2 class="title">Publications</h2>
+    <div class="publication-items">
+      {publications.map((pub) => (
+        <div class="publication-item">
+          <div class="publication-title">
+            <a href={pub.link}>{pub.title}</a>
+          </div>
+          <div class="authors">{pub.authors}</div>
+          <div class="conference">{pub.conference}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+)}
+
+<style lang="scss">
+.publications {
+    .title {
+        @include header;
+    }
+    .publication-items {
+        .publication-item {
+            margin-bottom: 20px;
+            .publication-title {
+                a {
+                    text-decoration: none;
+                    font-weight: bold;
+                    @include body-text; 
+                }
+            }
+            .authors {
+                @include body-text; 
+            }
+            .conference {
+                @include body-text; 
+                color: var(--fg-color-title-sm);
+                font-weight: 100;
+            }
+        }
+    }
+}
+</style>

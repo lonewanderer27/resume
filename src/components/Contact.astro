@@ -1,0 +1,93 @@
+---
+import type { Contact } from "../types";
+import { MailIcon, TwitterIcon, PhoneIcon, GithubIcon, LinkedinIcon } from 'astro-feather';
+
+const { contact } = Astro.props as { contact: Contact };
+---
+
+{contact && (
+  <section class="contact">
+    <div class="title">Contact</div>
+    
+    {contact.email && (
+      <div class="contact-item">
+        <MailIcon stroke="var(--fg-color)" size={18} />
+        <a href={`mailto:${contact.email}`}>
+          {contact.email}
+        </a>
+      </div>
+    )}
+
+    {contact.phone && (
+      <div class="contact-item">
+        <PhoneIcon  stroke="var(--fg-color)" size={18} />
+        <a href={`tel:${contact.phone}`}>
+          {contact.phone}
+        </a>
+      </div>
+    )}
+
+    {contact.github && (
+      <div class="contact-item">
+        <GithubIcon  stroke="var(--fg-color)" size={18} />
+        <a href={`https://github.com/${contact.github}`} target="_blank">
+          {contact.github}
+        </a>
+      </div>
+    )}
+
+    {contact.linkedin && (
+      <div class="contact-item">
+        <LinkedinIcon  stroke="var(--fg-color)" size={18} />
+        <a href={`https://linkedin.com/in/${contact.linkedin}`} target="_blank">
+          {contact.linkedin}
+        </a>
+      </div>
+    )}
+
+    {contact.twitter && (
+      <div class="contact-item">
+        <TwitterIcon  stroke="var(--fg-color)" size={18} />
+        <a href={`https://twitter.com/${contact.twitter}`} target="_blank">
+          {contact.twitter}
+        </a>
+      </div>
+    )}
+
+    {contact.gitlab && (
+      <div class="contact-item">
+        <i data-feather="gitlab"></i>
+        <a href={`https://gitlab.com/${contact.gitlab}`} target="_blank">
+          {contact.gitlab}
+        </a>
+      </div>
+    )}
+  </section>
+)}
+
+<style lang="scss">
+.contact {
+    margin-bottom: 20px;
+    .title {
+        @include sub-header;
+    }
+    .contact-item {
+        display: flex;
+        align-items: center;
+        svg {
+            width: 18px;
+            display: inline-block;
+            color: var(--fg-color);
+        }
+        a {
+            text-decoration: none;
+            padding-top: 4px;
+            padding-left: 4px;
+            @include body-text;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+</style>

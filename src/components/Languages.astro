@@ -1,0 +1,24 @@
+---
+const { languages } = Astro.props as { languages: string[] }
+---
+
+{languages && languages.length > 0 && (
+  <section class="languages">
+    <div class="title">Languages</div>
+    {languages.map((lang) => (
+      <div class="idiom">{lang}</div>
+    ))}
+  </section>
+)}
+
+<style lang="scss">
+.languages {
+  margin-bottom: 20px;
+  .title {
+      @include sub-header;
+  }
+  .idiom {
+      @include body-text;
+  }
+}
+</style>

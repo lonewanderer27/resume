@@ -1,0 +1,40 @@
+---
+import type { Certificate } from "../types"; // Assuming Certificate type is defined elsewhere
+
+const { certificates } = Astro.props as { certificates: Certificate[] };
+---
+
+{certificates && certificates.length > 0 && (
+  <section class="certificates">
+    <div class="title">Certificates</div>
+    {certificates.map(c => (
+      <div class="certificate-item">
+        <a href={c.link} class="title">{c.title}</a>
+        <div class="website">{c.issuer}</div>
+        <div class="time">{c.date}</div>
+      </div>
+    ))}
+  </section>
+)}
+
+<style lang="scss">
+.certificates {
+    margin-bottom: 20px;
+    .title {
+        @include sub-header;
+    }
+    .certificate-item {
+        margin-bottom: 20px;
+        .title {
+            @include body-text;
+            font-weight: bold;
+        }
+        .website {
+            @include body-text;
+        }
+        .time {
+            @include body-text;
+        }
+    }
+}
+</style>

@@ -1,0 +1,67 @@
+---
+import type { Experience } from "../types";
+
+const { experience } = Astro.props as { experience: Experience[] };
+---
+
+{experience && (
+  <section class="experience">
+    <h2 class="title">Experience</h2>
+
+    {experience.map((exp) => (
+      <div class="experience-item">
+        <div class="role">
+          {exp.role}
+        </div>
+
+        <div class="company">
+          {exp.company}
+          {exp.freelance && <span>(Freelance)</span>}
+          {/* Display startDate only if it exists */}
+          <span class="time">{exp.startDate ? `${exp.startDate} - ` : ""} {exp.endDate}</span>
+        </div>
+
+        <div class="details">
+          {exp.details.map((detail) => (
+            <span>- {detail}</span><br />
+          ))}
+        </div>
+
+        <p class="technologies">
+          Technologies Used: {exp.technologies.join(", ")}
+        </p>
+      </div>
+    ))}
+  </section>
+)}
+
+<style lang="scss">
+.experience {
+    .title {
+        @include header;
+    }
+    .experience-item {
+        .role {
+            @include sub-header;
+        }
+        .company {
+            @include body-text;
+            font-weight: bold;
+            .sister_company {
+                color: var(--fg-color-title-sm);
+            }
+            .time {
+                float: right;
+                color: var(--fg-color-title-sm);
+                font-weight: 100;
+            }
+        }
+        .details {
+            @include body-text;
+        }
+        .technologies {
+            @include body-text;
+        }
+    }
+}
+</style>

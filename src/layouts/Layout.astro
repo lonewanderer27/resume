@@ -1,0 +1,135 @@
+---
+import Head from "../components/Head.astro"
+import { config } from "../data"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<Head siteTitle={config.siteTitle} />
+<body>
+  <slot/>
+</body>
+</html>
+
+<style is:global>
+* {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 900px;
+    min-height: 900px;
+    margin: 0 auto;
+    background-color: var(--bg-color-cv);
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    padding:30px;
+    margin-top:30px;
+    margin-bottom: 30px;
+    .container-block {
+        width: 90%;
+        margin: 0 auto;
+        padding:20px;
+        display: grid;
+        grid-template-columns: 2fr 5fr;
+        .sidebar {
+            margin-top: 20px;
+        }
+    }
+}
+
+:root {
+    --bg-color: #f1f1f1;
+    --bg-color-cv: #ffffff;
+    --fg-color: #46007f;
+    --fg-color-dark: #46007f;
+    --fg-color-body: #5e6369;
+    --fg-color-title-sm: #688293;
+}
+
+[data-theme='dark'] {
+    --bg-color: #28343b;
+    --bg-color-cv: #1b262c;
+    --fg-color: #7a00ab; 
+    --fg-color-dark: #7a00ab; 
+    --fg-color-body: rgba(187,225,250,0.75);
+    --fg-color-title-sm: #688293;
+}
+
+@media print {
+    /* set page size to A4 */
+    @page {
+        size: A4;
+    }
+    /* revert to default theme */
+    :root {
+        --bg-color: #f1f1f1;
+        --bg-color-cv: #ffffff;
+        --fg-color: #46007f;
+        --fg-color-dark: #46007f;
+        --fg-color-body: #5e6369;
+        --fg-color-title-sm: #688293;
+    }
+    .container {
+        margin:0;
+        padding:0;
+        box-shadow: none;
+        background-color: #ffffff;
+        width: 1000px;
+        .container-block {
+            padding:0;
+            
+        }
+        .header {
+            input, label {
+                display: none;
+            }
+        }
+    }
+    /* remove underline from links */
+    a {
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-color: var(--bg-color-cv);
+    }
+    .container {
+        // padding:0;
+        // margin:0;
+        box-shadow: none;
+        .container-block {
+
+            .sidebar {
+                div {
+                    text-align: left;
+                }                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        .container-block {
+            display: block;
+        }
+    }
+    .header {
+        display: block;
+        .title {
+            margin:0 auto;
+        }
+        input, label {
+            display: none;
+        }
+    }
+}
+</style>

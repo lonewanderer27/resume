@@ -1,0 +1,60 @@
+---
+const { supportDarkMode, name } = Astro.props as { supportDarkMode: boolean, name: string };
+import { MoonIcon } from "astro-feather";
+---
+
+<div class="header">
+  <h1 class="title">{name}</h1>
+  <div>
+    {supportDarkMode && (
+      <input type="checkbox" id="switch" name="mode" class="toggle-dark"></input>
+      <label for="switch" title="Toggle Dark Mode">
+        <div id="moon">
+          <MoonIcon fill="var(--fg-color)" />
+        </div>
+      </label>
+    )}
+  </div>
+</div>
+
+<script lang="js">
+var checkbox = document.querySelector('input[name=mode]')
+checkbox.addEventListener('change', function() {
+    if(this.checked) {
+        console.log('checked')
+        document.documentElement.setAttribute('data-theme', 'dark')
+        var moon = document.getElementById('moon')
+        moon.innerHTML = feather.icons['sun'].toSvg({'fill': 'var(--fg-color-dark)'})
+    } else {
+        console.log('unchecked')
+        document.documentElement.setAttribute('data-theme', 'light')
+        var moon = document.getElementById('moon')
+        moon.innerHTML = feather.icons['moon'].toSvg({'fill': 'var(--fg-color-dark)'})
+    }
+})
+</script>
+
+<style lang="scss">
+.header {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+        color: var(--fg-color-dark);
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+    input[type="checkbox"] {
+        width: 0;
+        height:0;
+        display: none;
+    }
+    label {
+        cursor: pointer;
+        color: var(--fg-color-dark);
+        
+    }
+}
+</style>

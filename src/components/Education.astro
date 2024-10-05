@@ -1,0 +1,41 @@
+---
+import type { Education } from "../types";
+
+const { education } = Astro.props as { education: Education[] };
+---
+
+{education && (
+  <section class="education">
+    <div class="title">Education</div>
+    
+    {education.map((ed) => (
+      <div class="education-item">
+        <div class="degree">{ed.degree}</div>
+        <div class="university">{ed.institute}</div>
+        {ed.date && <div class="time">{ed.date}</div>}
+      </div>
+    ))}
+  </section>
+)}
+
+<style lang="scss">
+.education {
+    margin-bottom: 20px;
+    .title {
+        @include sub-header;
+    }
+    .education-item {
+        margin-bottom: 20px;
+        .degree {
+            @include body-text;
+            font-weight: bold;
+        }
+        .university {
+            @include body-text;
+        }
+        .time {
+            @include body-text;
+        }
+    }
+}
+</style>
