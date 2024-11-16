@@ -85,7 +85,7 @@ const careerProfile = "As a Front-End Web Developer with one year of experience,
 
 const experiences: Experience[] = [
   {
-    role: "WordPress Developer",
+    role: "Full-Stack Web Developer",
     startDate: "Nov 2022",
     endDate: "Jan 2023",
     company: "OMP Security",
@@ -99,6 +99,7 @@ const experiences: Experience[] = [
     technologies: [
       "PHP",
       "WordPress",
+      "MySQL",
       "HTML",
       "CSS",
       "Bootstrap",
@@ -106,7 +107,7 @@ const experiences: Experience[] = [
     ],
   },
   {
-    role: "React Developer",
+    role: "Front-End Web Developer",
     startDate: "Nov 2022",
     endDate: "Feb 2023",
     freelance: true,
@@ -115,10 +116,10 @@ const experiences: Experience[] = [
       "Integrated a payment gateway for purchasing gift cards",
       "Developed social media like features including commenting, liking, and tagging",
     ],
-    technologies: ["MongoDB", "Express", "React", "SASS"],
+    technologies: ["MongoDB", "Express", "React", "Laravel", "SASS", "MySQL", "Bootstrap"],
   },
   {
-    role: "WordPress Developer",
+    role: "Full-Stack Web Developer",
     startDate: "June 2022",
     endDate: "Oct 2022",
     company: "ARSIA Inc.",
@@ -133,6 +134,7 @@ const experiences: Experience[] = [
     ],
     technologies: [
       "PHP",
+      "MySQL",
       "WordPress",
       "HTML",
       "CSS",
