@@ -43,6 +43,15 @@ export type Skill = {
   skills: string[];
 };
 
+export type Reference = {
+  name: string;
+  role?: string;
+  company?: string;
+  relationship?: string;
+  email?: string;
+  contactNo: string;
+};
+
 export type Experience = {
   role: string;
   startDate: string;
@@ -52,6 +61,7 @@ export type Experience = {
   companyLink?: string;
   details: string[];
   technologies: string[];
+  // references?: Reference[];
 };
 
 export type Project = {

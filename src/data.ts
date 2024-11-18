@@ -1,4 +1,4 @@
-import { type Config, type Education, type Certificate, type Skill, SkillCategory, type Experience, type Project, type Contact, type Volunteering } from "./types";
+import { type Config, type Education, type Certificate, type Skill, SkillCategory, type Experience, type Project, type Contact, type Volunteering, type Reference } from "./types";
 
 const config: Config = {
   name: "Ian James Puzon",
@@ -25,6 +25,14 @@ const education: Education[] = [
     degree: "B.S. Computer Science",
   },
 ];
+
+const references: Reference[] = [
+  {
+    name: "Eboy Samonte",
+    role: "IT Officer",
+    contactNo: "0916997158",
+  }
+]
 
 const certificates: Certificate[] = [
   {
@@ -56,20 +64,18 @@ const skills: Skill[] = [
     category: SkillCategory.Frontend,
     skills: [
       "React, NextJS",
-      "Tailwind",
-      "Bootstrap",
+      "Tailwind, Bootstrap",
+      "Jekyll, Astro",
       "Svelte",
-      "Jekyll",
-      "Astro"
     ],
   },
   {
     category: SkillCategory.Backend,
-    skills: ["WordPress", "Laravel", "FastAPI", "Flask", "Express"],
+    skills: ["FastAPI, Flask", "WordPress", "Laravel", "Express"],
   },
   {
     category: SkillCategory.Database,
-    skills: ["MySQL, PostgreSQL", "Supabase", "Firebase", "MongoDB",],
+    skills: ["MySQL, PostgreSQL", "MongoDB"],
   },
   {
     category: SkillCategory.MobileApp,
@@ -105,6 +111,13 @@ const experiences: Experience[] = [
       "Bootstrap",
       "JavaScript",
     ],
+    // references: [
+    //   {
+    //     name: "Eboy Samonte",
+    //     role: "IT Officer",
+    //     contactNo: "0916997158"
+    //   }
+    // ]
   },
   {
     role: "Front-End Web Developer",
@@ -188,6 +201,7 @@ export {
   contact,
   languages,
   education,
+  references,
   skills,
   careerProfile,
   certificates,

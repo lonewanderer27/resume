@@ -1,0 +1,53 @@
+---
+import type { Reference } from "../types";
+
+const { references } = Astro.props as { references: Reference[] };
+---
+
+{(references && references.length > 0) && (
+  <section class="references">
+    <div class="title">References</div>
+    
+    {references.map((ex) => (
+      <div class="reference-item">
+        <div class="name">{ex.name}</div>
+        {ex.role && <div class="role">{ex.role}</div>}
+        {ex.company && <div class="company">{ex.company}</div>}
+        <div class="contact-no">{ex.contactNo}</div>
+        {ex.email && <div class="email">{ex.email}</div>}
+        {ex.relationship && <div class="relationship">{ex.relationship}</div>}
+      </div>
+    ))}
+  </section>
+)}
+
+<style lang="scss">
+.references {
+    margin-bottom: 20px;
+    .title {
+        @include sub-header;
+    }
+    .reference-item {
+        margin-bottom: 20px;
+        .name {
+            @include body-text;
+            font-weight: bold;
+        }
+        .company {
+            @include body-text;
+        }
+        .role {
+            @include body-text;
+        }
+        .relationship {
+            @include body-text;
+        }
+        .email {
+            @include body-text;
+        }
+        .contact-no {
+            @include body-text;
+        }
+    }
+}
+</style>

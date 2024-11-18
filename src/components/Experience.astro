@@ -30,6 +30,15 @@ const { experience } = Astro.props as { experience: Experience[] };
         <p class="technologies">
           Technologies Used: {exp.technologies.join(", ")}
         </p>
+
+        {/* {exp.references && exp.references.length > 0 && (
+          <p class="references">
+            References: 
+            {exp.references.map((ref) => (
+              <>{ref.name} ({ref.role}): {ref.contactNo}</>
+            ))}
+          </p>
+        )} */}
       </div>
     ))}
   </section>
@@ -62,6 +71,9 @@ const { experience } = Astro.props as { experience: Experience[] };
         .technologies {
             @include body-text;
         }
+        // .references {
+        //     @include body-text;
+        // }
     }
 }
 </style>

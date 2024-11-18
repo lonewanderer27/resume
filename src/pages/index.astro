@@ -11,7 +11,8 @@ import Experience from "../components/Experience.astro"
 import Publications from "../components/Publications.astro"
 import Projects from "../components/Projects.astro"
 import Volunteering from "../components/Volunteering.astro"
-import { certificates, config, contact, education, experiences, projects, skills, volunteering, careerProfile, languages } from "../data"
+import { certificates, config, contact, education, experiences, projects, skills, volunteering, careerProfile, languages, references } from "../data"
+import References from "../components/References.astro"
 ---
 
 <Layout>
@@ -22,6 +23,7 @@ import { certificates, config, contact, education, experiences, projects, skills
 				<Contact contact={contact} />
 				<Languages languages={languages} />
 				<Education education={education} />
+				<References references={references} />
 				<Certificates certificates={certificates} />
 				<Skills skills={skills} />
 			</div>
