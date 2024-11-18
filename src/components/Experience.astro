@@ -21,11 +21,11 @@ const { experience } = Astro.props as { experience: Experience[] };
           <span class="time">{exp.startDate ? `${exp.startDate} - ` : ""} {exp.endDate}</span>
         </div>
 
-        <div class="details">
+        <ul class="details">
           {exp.details.map((detail) => (
-            <span>- {detail}</span><br />
+            <li>{detail}</li>
           ))}
-        </div>
+        </ul>
 
         <p class="technologies">
           Technologies Used: {exp.technologies.join(", ")}
@@ -67,6 +67,12 @@ const { experience } = Astro.props as { experience: Experience[] };
         }
         .details {
             @include body-text;
+            padding: 0 0 0 15px;
+            margin-top: 0;
+            li {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
         }
         .technologies {
             @include body-text;
@@ -78,9 +84,11 @@ const { experience } = Astro.props as { experience: Experience[] };
 }
 
 @media (max-width: 768px) {
-    .experience-item .company .time {
-        float: none !important;
-        display: block !important;
+    @media not print {
+        .experience-item .company .time {
+            float: none !important;
+            display: block !important;
+        }
     }
 }
 </style>

@@ -100,7 +100,7 @@ const experiences: Experience[] = [
       "Revamped the existing website to enhance user experience and design",
       "Developed and maintained custom WordPress themes and plugins",
       "Optimized website performance and security, ensuring reliable uptime",
-      "Conducted training sessions for staff on effective use of the admin dashboard and website features",
+      "Conducted training sessions for staff on effective use of the admin dashboard",
     ],
     technologies: [
       "PHP",

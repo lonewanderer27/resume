@@ -49,9 +49,12 @@ const { volunteering } = Astro.props as { volunteering: Volunteering[] };
 }
 
 @media (max-width: 768px) {
-    .volunteering-item .organization .time {
-        float: none !important;
-        display: block !important;
+    @media not print {
+        .volunteering-item .organization .time {
+            float: none;
+            display: block;
+            margin-top: 5px;
+        }
     }
 }
 </style>
