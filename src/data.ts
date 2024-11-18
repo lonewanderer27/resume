@@ -81,7 +81,7 @@ const skills: Skill[] = [
   },
 ];
 
-const careerProfile = "As a Front-End Web Developer with one year of experience, I specialize in creating responsive and interactive web and mobile applications. My adaptability and fast-learning skills allow me to work with any required technology. I am a team player who collaborates effectively and can work independently, prioritizing efficiency and timeliness in all tasks. ";
+const careerProfile = "As a Front-End Web Developer with one year of experience, I specialize in creating responsive and interactive web and mobile applications. I am highly adaptable and can learn any required technology with minimal supervision. I am also a team player who collaborates effectively yet can also work independently, prioritizing efficiency and timeliness in my tasks.";
 
 const experiences: Experience[] = [
   {
