@@ -160,17 +160,17 @@ const projects: Project[] = [
 ];
 
 const volunteering: Volunteering[] = [
-  {
-    startDate: "August 2024",
-    endDate: "Present",
-    role: "SBD Web & Mobile Development Mentor",
-    company: "AWS Cloud Clubs - Adamson University",
-    details: [
-      "Mentored students in web and mobile development",
-      "Assisted in the development of the club's website",
-      "Conducted workshops on React, NextJS, and React Native",
-    ],
-  },
+  // {
+  //   startDate: "August 2024",
+  //   endDate: "Present",
+  //   role: "SBD Web & Mobile Development Mentor",
+  //   company: "AWS Cloud Clubs - Adamson University",
+  //   details: [
+  //     "Mentored students in web and mobile development",
+  //     "Assisted in the development of the club's website",
+  //     "Conducted workshops on React, NextJS, and React Native",
+  //   ],
+  // },
   {
     startDate: "August 2023",
     endDate: "May 2024",
@@ -178,7 +178,7 @@ const volunteering: Volunteering[] = [
     company: "Adamson University Computer Science Society",
     details: [
       "Facilitated a Capture The Flag competition for Computer Science students",
-      "Helped with technical support for the university's online events",
+      "Helped with technical support for the department's events",
     ]
   }
 ]
