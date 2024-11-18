@@ -76,4 +76,11 @@ const { experience } = Astro.props as { experience: Experience[] };
         // }
     }
 }
+
+@media (max-width: 768px) {
+    .experience-item .company .time {
+        float: none !important;
+        display: block !important;
+    }
+}
 </style>
