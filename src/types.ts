@@ -54,11 +54,11 @@ export type Reference = {
 
 export type Experience = {
   role: string;
-  roleLong?: string;
+  roleLong?: string;  // Optional for long role names
   startDate: string;
   endDate?: string; // Optional for ongoing roles
   company?: string;
-  companyLong?: string;
+  companyLong?: string; // Optional for long company names
   freelance?: boolean; // Optional for freelance roles
   companyLink?: string;
   details: string[];
@@ -81,10 +81,10 @@ export type Publication = {
 
 export type Volunteering = {
   startDate: string;
-  endDate?: string; // Optional for ongoing roles
+  endDate?: string;   // Optional for ongoing roles
   role: string;
-  roleLong?: string;
+  roleLong?: string;  // Optional for long role names
   company: string;
-  companyLong?: string;
+  companyLong?: string; // Optional for long company names
   details: string[];
 };
