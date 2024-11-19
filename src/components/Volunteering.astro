@@ -9,9 +9,11 @@ const { volunteering } = Astro.props as { volunteering: Volunteering[] };
     <h2 class="title">Volunteering</h2>
     {volunteering.map((vol) => (
       <div class="volunteering-item">
-        <div class="role">{vol.role}</div>
+        <div class="role">
+          <span title={vol.roleLong}>{vol.role}</span>
+        </div>
         <div class="organization">
-          {vol.company}
+          <span title={vol.companyLong}>{vol.company}</span>
           <span class="time">
             {/* Display startDate only if it exists */}
           <span class="time">{vol.startDate ? `${vol.startDate} - `: ""} {vol.endDate}</span>

@@ -54,9 +54,11 @@ export type Reference = {
 
 export type Experience = {
   role: string;
+  roleLong?: string;
   startDate: string;
   endDate?: string; // Optional for ongoing roles
   company?: string;
+  companyLong?: string;
   freelance?: boolean; // Optional for freelance roles
   companyLink?: string;
   details: string[];
@@ -81,6 +83,8 @@ export type Volunteering = {
   startDate: string;
   endDate?: string; // Optional for ongoing roles
   role: string;
+  roleLong?: string;
   company: string;
+  companyLong?: string;
   details: string[];
 };

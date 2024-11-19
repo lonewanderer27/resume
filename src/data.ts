@@ -136,6 +136,7 @@ const experiences: Experience[] = [
     startDate: "June 2022",
     endDate: "Oct 2022",
     company: "ARSIA Inc.",
+    companyLong: "ABC-RMO Security and Investigation Agency Inc.",
     companyLink: "https://abcrmosecurity.com/",
     details: [
       "Developed an admin interface for publishing security announcements",
@@ -188,7 +189,9 @@ const volunteering: Volunteering[] = [
     startDate: "August 2023",
     endDate: "May 2024",
     role: "CLAWS Leader",
-    company: "Adamson University Computer Science Society",
+    roleLong: "Confederation of Leading Adamsonian Web Scientists Leader",
+    company: "ACOMSS",
+    companyLong: "Adamson University Computer Science Society",
     details: [
       "Facilitated a Capture The Flag competition for Computer Science students",
       "Helped with technical support for the department's events",

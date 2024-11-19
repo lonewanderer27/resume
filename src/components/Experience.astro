@@ -11,11 +11,11 @@ const { experience } = Astro.props as { experience: Experience[] };
     {experience.map((exp) => (
       <div class="experience-item">
         <div class="role">
-          {exp.role}
+          <span title={exp.roleLong}>{exp.role}</span>
         </div>
 
         <div class="company">
-          {exp.company}
+          <span title={exp.companyLong}>{exp.company}</span>
           {exp.freelance && <span>(Freelance)</span>}
           {/* Display startDate only if it exists */}
           <span class="time">{exp.startDate ? `${exp.startDate} - ` : ""} {exp.endDate}</span>
