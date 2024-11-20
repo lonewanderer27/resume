@@ -26,6 +26,13 @@ const { references } = Astro.props as { references: Reference[] };
 )}
 
 <style lang="scss">
+a   {
+    text-decoration: none;
+    @include body-text;
+    &:hover {
+        text-decoration: underline;
+    }
+}
 .references {
     margin-bottom: 20px;
     .title {
