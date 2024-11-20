@@ -12,10 +12,10 @@ import {
 } from "./types";
 
 const contact: Contact = {
-  email: "adrianejames27@gmail.com",
+  email: "ian.james.puzon@gmail.com",
   github: "lonewanderer27",
   linkedin: "jay-puzon",
-  phone: "+639983082814",
+  phone: "09924471033",
 };
 
 const languages: string[] = [];
@@ -53,7 +53,7 @@ const certificates: Certificate[] = [
 const skills: Skill[] = [
   {
     category: "Languages",
-    skills: ["JavaScript, TypeScript", "HTML, CSS, SCSS", "Python", "PHP"],
+    skills: ["JavaScript, TypeScript", "HTML, CSS, SCSS", "PHP, Java, Kotlin", "Python"],
   },
   {
     category: SkillCategory.Frontend,
@@ -61,15 +61,15 @@ const skills: Skill[] = [
   },
   {
     category: SkillCategory.Backend,
-    skills: ["FastAPI, Flask", "WordPress", "Laravel", "Express"],
+    skills: ["FastAPI, Flask", "WordPress, Laravel", "Express"],
   },
   {
     category: SkillCategory.Database,
-    skills: ["MySQL, PostgreSQL", "MongoDB"],
+    skills: ["PostgreSQL, MySQL", "MongoDB"],
   },
   {
     category: SkillCategory.MobileApp,
-    skills: ["Ionic Capacitor, Cordova", "Android Studio", "React Native"],
+    skills: ["Ionic, Capacitor, Cordova", "Android Studio", "React Native"],
   },
   {
     category: SkillCategory.DevOps,
