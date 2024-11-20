@@ -181,15 +181,14 @@ const volunteering: Volunteering[] = [
   //   ],
   // },
   {
-    startDate: "August 2023",
+    startDate: "August 2022",
     endDate: "May 2024",
-    role: "CLAWS Leader",
-    roleLong: "Confederation of Leading Adamsonian Web Scientists Leader",
+    role: "Research Director",
     company: "ACOMSS",
     companyLong: "Adamson University Computer Science Society",
     details: [
-      "Facilitated a Capture The Flag competition for Computer Science students",
-      "Helped with technical support for the department's events.",
+      "Led the technical setup for a Capture The Flag (CTF) competition, including configuring Docker and hosting it on a local server with ngrok for external access of participants.",
+      "Provided technical support for ACOMSS events, including managing event presentations, recording, live streaming, and assisting with registration and manpower coordination."
     ],
   },
 ];

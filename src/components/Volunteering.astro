@@ -19,7 +19,12 @@ const { volunteering } = Astro.props as { volunteering: Volunteering[] };
           <span class="time">{vol.startDate ? `${vol.startDate} - `: ""} {vol.endDate}</span>
           </span>
         </div>
-        <div class="details">{vol.details.join(', ')}</div>
+        <ul class="details">
+          {/* {vol.details.join(', ')} */}
+          {vol.details.map((detail) => (
+            <li>{detail}</li>
+          ))}
+        </ul>
       </div>
     ))}
   </section>
@@ -46,6 +51,12 @@ const { volunteering } = Astro.props as { volunteering: Volunteering[] };
         }
         .details {
             @include body-text;
+            padding: 0 0 0 20px;
+            margin-top: 0;
+            li {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
         }
     }
 }
@@ -53,9 +64,8 @@ const { volunteering } = Astro.props as { volunteering: Volunteering[] };
 @media (max-width: 768px) {
     @media not print {
         .volunteering-item .organization .time {
-            float: none;
-            display: block;
-            margin-top: 5px;
+            float: none !important;
+            display: block !important;
         }
     }
 }
