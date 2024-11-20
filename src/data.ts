@@ -165,12 +165,12 @@ const projects: Project[] = [
     details:
       "Coffee ordering app developed using Ionic React and Firebase. Features a unique 3D View functionality allowing customers to virtually explore the cafe using their mobile devices.",
   },
-  {
-    title: "JAMMA",
-    link: "https://jamma-shop.vercel.app",
-    details:
-      "A comprehensive shop platform designed for Multimedia Arts students, developed using React and powered by Supabase.",
-  },
+  // {
+  //   title: "JAMMA",
+  //   link: "https://jamma-shop.vercel.app",
+  //   details:
+  //     "A comprehensive shop platform designed for Multimedia Arts students, developed using React and powered by Supabase.",
+  // },
 ];
 
 const volunteering: Volunteering[] = [
@@ -194,7 +194,7 @@ const volunteering: Volunteering[] = [
     companyLong: "Adamson University Computer Science Society",
     details: [
       "Facilitated a Capture The Flag competition for Computer Science students",
-      "Helped with technical support for the department's events",
+      "Helped with technical support for the department's events.",
     ]
   }
 ]
