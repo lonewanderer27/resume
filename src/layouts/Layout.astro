@@ -43,7 +43,9 @@ body {
     }
 }
 
-:root {
+/* Violet color theme */
+/* Disabled for now */
+/* :root {
     --bg-color: #f1f1f1;
     --bg-color-cv: #ffffff;
     --fg-color: #46007f;
@@ -59,6 +61,25 @@ body {
     --fg-color-dark: #7a00ab; 
     --fg-color-body: rgba(187,225,250,0.75);
     --fg-color-title-sm: #688293;
+} */
+
+/* Black and white color theme */
+:root {
+    --bg-color: #f1f1f1;          
+    --bg-color-cv: #ffffff;      
+    --fg-color: #1a1a1a;          
+    --fg-color-dark: #333333;     
+    --fg-color-body: #666666;     
+    --fg-color-title-sm: #888888; 
+}
+
+[data-theme='dark'] {
+    --bg-color: #28343b;          
+    --bg-color-cv: #1b262c;      
+    --fg-color: #e0e0e0;          
+    --fg-color-dark: #b0b0b0;     
+    --fg-color-body: rgba(187,225,250,0.9);
+    --fg-color-title-sm: #d0d0d0;
 }
 
 @media print {
@@ -66,14 +87,14 @@ body {
     @page {
         size: A4;
     }
-    /* revert to default theme */
+    /* revert to black and white default theme */
     :root {
-        --bg-color: #f1f1f1;
-        --bg-color-cv: #ffffff;
-        --fg-color: #46007f;
-        --fg-color-dark: #46007f;
-        --fg-color-body: #5e6369;
-        --fg-color-title-sm: #688293;
+        --bg-color: #f1f1f1;          /* Light background color */
+        --bg-color-cv: #ffffff;       /* White background for CV sections */
+        --fg-color: #1a1a1a;          /* Almost black foreground color */
+        --fg-color-dark: #333333;     /* Dark grey for deeper foreground elements */
+        --fg-color-body: #666666;     /* Medium grey for body text */
+        --fg-color-title-sm: #888888; /* Light grey for smaller titles */
     }
     .container {
         margin:0;
