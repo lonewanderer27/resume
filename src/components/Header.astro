@@ -1,10 +1,10 @@
 ---
-const { supportDarkMode, name } = Astro.props as { supportDarkMode: boolean, name: string };
+const { supportDarkMode, title } = Astro.props as { supportDarkMode: boolean, title: string };
 import { MoonIcon } from "astro-feather";
 ---
 
 <div class="header">
-  <h1 class="title">{name}</h1>
+  <h1 class="title">{title}</h1>
   <div>
     {supportDarkMode && (
       <input type="checkbox" id="switch" name="mode" class="toggle-dark"></input>

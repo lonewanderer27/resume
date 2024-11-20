@@ -11,46 +11,46 @@ import {
   type CareerProfile,
 } from "./types";
 
-const contact: Contact = {
-  email: "adrianejames27@gmail.com",
-  github: "lonewanderer27",
-  linkedin: "jay-puzon",
-  phone: "+639983082814",
+const contactMock: Contact = {
+  email: "alanturing@outlook.com",
+  github: "alanturing",
+  linkedin: "alan-turing",
+  phone: "+1234567890",
 };
 
-const languages: string[] = [];
+const languagesMock: string[] = [];
 
-const education: Education[] = [
+const educationMock: Education[] = [
   {
-    institute: "Adamson University",
+    institute: "Example University",
     degree: "B.S. Computer Science",
   },
 ];
 
-const references: Reference[] = [
+const referencesMock: Reference[] = [
   {
-    name: "Eboy Samonte",
+    name: "Reference Name",
     role: "IT Officer",
-    contactNo: "0916997158",
+    contactNo: "+1234567890",
   },
 ];
 
-const certificates: Certificate[] = [
+const certificatesMock: Certificate[] = [
   {
     title: "Learn React",
-    link: "https://v2.scrimba.com/certificate-cert2CsEjr6BTPCjR2r6GqCgcfc4y5MpTb6twi",
-    issuer: "Scrimba",
+    link: "https://example.com/certificate/react",
+    issuer: "Example Platform",
     date: "Sep 2024",
   },
   {
     title: "JavaScript Deep Dive",
-    link: "https://scrimba.com/certificate/u2Nz6eAV/gjavascript",
-    issuer: "Scrimba",
+    link: "https://example.com/certificate/js",
+    issuer: "Example Platform",
     date: "Nov 2022",
   },
 ];
 
-const skills: Skill[] = [
+const skillsMock: Skill[] = [
   {
     category: "Languages",
     skills: ["JavaScript, TypeScript", "HTML, CSS, SCSS", "Python", "PHP"],
@@ -77,19 +77,19 @@ const skills: Skill[] = [
   },
 ];
 
-const careerProfile: CareerProfile = {
-  title: "Ian James Puzon",
+const careerProfileMock: CareerProfile = {
+  title: "Alan Turing",
   description:
     "As a Front-End Web Developer with one year of experience, I specialize in creating responsive and interactive web and mobile applications. I am highly adaptable and can learn any required technology with minimal supervision. I am also a team player who collaborates effectively yet can also work independently, prioritizing efficiency and timeliness in my tasks.",
 };
 
-const experiences: Experience[] = [
+const experiencesMock: Experience[] = [
   {
     role: "Full-Stack Web Developer",
     startDate: "Nov 2022",
     endDate: "Jan 2023",
-    company: "OMP Security",
-    companyLink: "https://ompsecurity.com/",
+    company: "Example Company",
+    companyLink: "https://example.com/",
     details: [
       "Revamped the existing website to enhance user experience and design",
       "Developed and maintained custom WordPress themes and plugins",
@@ -114,7 +114,7 @@ const experiences: Experience[] = [
     details: [
       "Implemented a company dashboard for sending and receiving gift cards",
       "Integrated a payment gateway for purchasing gift cards",
-      "Developed social media like features including commenting, liking, and tagging",
+      "Developed social media-like features including commenting, liking, and tagging",
     ],
     technologies: [
       "MongoDB",
@@ -130,9 +130,8 @@ const experiences: Experience[] = [
     role: "Full-Stack Web Developer",
     startDate: "June 2022",
     endDate: "Oct 2022",
-    company: "ARSIA Inc.",
-    companyLong: "ABC-RMO Security and Investigation Agency Inc.",
-    companyLink: "https://abcrmosecurity.com/",
+    company: "Example Company",
+    companyLink: "https://example.com/",
     details: [
       "Developed an admin interface for publishing security announcements",
       "Implemented a job application form for potential applicants",
@@ -153,40 +152,21 @@ const experiences: Experience[] = [
   },
 ];
 
-const projects: Project[] = [
+const projectsMock: Project[] = [
   {
-    title: "The Coffee Lounge",
-    link: "https://coffee-lounge.vercel.app",
+    title: "Coffee App",
+    link: "https://example.com",
     details:
       "Coffee ordering app developed using Ionic React and Firebase. Features a unique 3D View functionality allowing customers to virtually explore the cafe using their mobile devices.",
   },
-  // {
-  //   title: "JAMMA",
-  //   link: "https://jamma-shop.vercel.app",
-  //   details:
-  //     "A comprehensive shop platform designed for Multimedia Arts students, developed using React and powered by Supabase.",
-  // },
 ];
 
-const volunteering: Volunteering[] = [
-  // {
-  //   startDate: "August 2024",
-  //   endDate: "Present",
-  //   role: "SBD Web & Mobile Development Mentor",
-  //   company: "AWS Cloud Clubs - Adamson University",
-  //   details: [
-  //     "Mentored students in web and mobile development",
-  //     "Assisted in the development of the club's website",
-  //     "Conducted workshops on React, NextJS, and React Native",
-  //   ],
-  // },
+const volunteeringMock: Volunteering[] = [
   {
     startDate: "August 2023",
     endDate: "May 2024",
-    role: "CLAWS Leader",
-    roleLong: "Confederation of Leading Adamsonian Web Scientists Leader",
-    company: "ACOMSS",
-    companyLong: "Adamson University Computer Science Society",
+    role: "Org Leader",
+    company: "Student Organization",
     details: [
       "Facilitated a Capture The Flag competition for Computer Science students",
       "Helped with technical support for the department's events.",
@@ -195,14 +175,14 @@ const volunteering: Volunteering[] = [
 ];
 
 export {
-  contact,
-  languages,
-  education,
-  references,
-  skills,
-  careerProfile,
-  certificates,
-  experiences,
-  projects,
-  volunteering,
+  contactMock,
+  languagesMock,
+  educationMock,
+  referencesMock,
+  skillsMock,
+  careerProfileMock,
+  certificatesMock,
+  experiencesMock,
+  projectsMock,
+  volunteeringMock,
 };

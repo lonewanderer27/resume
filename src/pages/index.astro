@@ -1,39 +1,63 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import Header from "../components/Header.astro"
-import Contact from "../components/Contact.astro"
-import Languages from "../components/Languages.astro"
-import Education from "../components/Education.astro"
-import Certificates from "../components/Certificates.astro"
-import Skills from "../components/Skills.astro"
-import CareerProfile from "../components/CareerProfile.astro"
-import Experience from "../components/Experience.astro"
-import Publications from "../components/Publications.astro"
-import Projects from "../components/Projects.astro"
-import Volunteering from "../components/Volunteering.astro"
-import { certificates, config, contact, education, experiences, projects, skills, volunteering, careerProfile, languages, references } from "../data"
-import References from "../components/References.astro"
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Contact from "../components/Contact.astro";
+import Languages from "../components/Languages.astro";
+import Education from "../components/Education.astro";
+import Certificates from "../components/Certificates.astro";
+import Skills from "../components/Skills.astro";
+import CareerProfile from "../components/CareerProfile.astro";
+import Experience from "../components/Experience.astro";
+import Publications from "../components/Publications.astro";
+import Projects from "../components/Projects.astro";
+import Volunteering from "../components/Volunteering.astro";
+import {
+  certificates,
+  contact,
+  education,
+  experiences,
+  projects,
+  skills,
+  volunteering,
+  careerProfile,
+  languages,
+  references,
+} from "../data";
+import config from "../config";
+import References from "../components/References.astro";
+import Mock from "../components/Mock.astro";
 ---
 
 <Layout>
-	<div class="container">
-		<Header name={config.name} supportDarkMode={config.supportDarkMode} />
-		<div class="container-block">
-			<div class="sidebar">
-				<Contact contact={contact} />
-				<Languages languages={languages} />
-				<Education education={education} />
-				<References references={references} />
-				<Certificates certificates={certificates} />
-				<Skills skills={skills} />
-			</div>
-			<div class="main">
-				<CareerProfile profile={careerProfile} />
-				<Experience experience={experiences} />
-				<Publications />
-				<Projects projects={projects} />
-				<Volunteering volunteering={volunteering} />
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    {
+      config.useMockData ? (
+        <Mock />
+      ) : (
+        <>
+          <Header
+            title={careerProfile.title}
+            supportDarkMode={config.supportDarkMode}
+          />
+          <div class="container-block">
+            <div class="sidebar">
+              <Contact contact={contact} />
+              <Languages languages={languages} />
+              <Education education={education} />
+              <References references={references} />
+              <Certificates certificates={certificates} />
+              <Skills skills={skills} />
+            </div>
+            <div class="main">
+              <CareerProfile profile={careerProfile.description} />
+              <Experience experience={experiences} />
+              <Publications />
+              <Projects projects={projects} />
+              <Volunteering volunteering={volunteering} />
+            </div>
+          </div>
+        </>
+      )
+    }
+  </div>
 </Layout>

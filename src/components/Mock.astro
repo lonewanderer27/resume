@@ -1,0 +1,52 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Contact from "../components/Contact.astro";
+import Languages from "../components/Languages.astro";
+import Education from "../components/Education.astro";
+import Certificates from "../components/Certificates.astro";
+import Skills from "../components/Skills.astro";
+import CareerProfile from "../components/CareerProfile.astro";
+import Experience from "../components/Experience.astro";
+import Publications from "../components/Publications.astro";
+import Projects from "../components/Projects.astro";
+import Volunteering from "../components/Volunteering.astro";
+import {
+  certificatesMock,
+  contactMock,
+  educationMock,
+  experiencesMock,
+  projectsMock,
+  skillsMock,
+  volunteeringMock,
+  careerProfileMock,
+  languagesMock,
+  referencesMock,
+} from "../mockData";
+import config from "../config";
+import References from "../components/References.astro";
+---
+
+<>
+  <Header
+    title={careerProfileMock.title}
+    supportDarkMode={config.supportDarkMode}
+  />
+  <div class="container-block">
+    <div class="sidebar">
+      <Contact contact={contactMock} />
+      <Languages languages={languagesMock} />
+      <Education education={educationMock} />
+      <References references={referencesMock} />
+      <Certificates certificates={certificatesMock} />
+      <Skills skills={skillsMock} />
+    </div>
+    <div class="main">
+      <CareerProfile profile={careerProfileMock.description} />
+      <Experience experience={experiencesMock} />
+      <Publications />
+      <Projects projects={projectsMock} />
+      <Volunteering volunteering={volunteeringMock} />
+    </div>
+  </div>
+</>

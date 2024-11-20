@@ -1,11 +1,16 @@
 export type Config = {
-  name: string;
   siteTitle: string;
   supportDarkMode: boolean;
   description: string;
   url: string;
+  useMockData?: boolean;
   // themeSkin: string;
 };
+
+export type CareerProfile = {
+  title: string;
+  description: string;
+}
 
 export type Contact = {
   email?: string;
