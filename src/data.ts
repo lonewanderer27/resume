@@ -30,7 +30,7 @@ const education: Education[] = [
 const references: Reference[] = [
   {
     name: "Eboy Samonte",
-    role: "IT Officer",
+    role: "I.T. Officer",
     contactNo: "0916997158",
   },
 ];

@@ -30,7 +30,7 @@ const educationMock: Education[] = [
 const referencesMock: Reference[] = [
   {
     name: "Reference Name",
-    role: "IT Officer",
+    role: "I.T. Officer",
     contactNo: "+1234567890",
   },
 ];
