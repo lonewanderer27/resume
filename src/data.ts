@@ -28,11 +28,11 @@ const education: Education[] = [
 ];
 
 const references: Reference[] = [
-  {
-    name: "Eboy Samonte",
-    role: "I.T. Officer",
-    contactNo: "0916997158",
-  },
+  // {
+  //   name: "Eboy Samonte",
+  //   role: "I.T. Officer",
+  //   contactNo: "0916997158",
+  // },
 ];
 
 const certificates: Certificate[] = [
