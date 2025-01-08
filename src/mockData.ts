@@ -28,11 +28,11 @@ const educationMock: Education[] = [
 ];
 
 const referencesMock: Reference[] = [
-  {
-    name: "Reference Name",
-    role: "I.T. Officer",
-    contactNo: "+1234567890",
-  },
+  // {
+  //   name: "Reference Name",
+  //   role: "I.T. Officer",
+  //   contactNo: "+1234567890",
+  // },
 ];
 
 const certificatesMock: Certificate[] = [
@@ -53,7 +53,7 @@ const certificatesMock: Certificate[] = [
 const skillsMock: Skill[] = [
   {
     category: "Languages",
-    skills: ["JavaScript, TypeScript", "HTML, CSS, SCSS", "Python", "PHP"],
+    skills: ["JavaScript, TypeScript", "HTML, CSS, SCSS", "PHP, Java, Kotlin", "Python, C#",],
   },
   {
     category: SkillCategory.Frontend,
@@ -61,7 +61,7 @@ const skillsMock: Skill[] = [
   },
   {
     category: SkillCategory.Backend,
-    skills: ["FastAPI, Flask", "WordPress", "Laravel", "Express"],
+    skills: ["WordPress, Laravel", ".NET, .NET Core", "FastAPI, Flask", "Express"],
   },
   {
     category: SkillCategory.Database,

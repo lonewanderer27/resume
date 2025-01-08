@@ -53,7 +53,7 @@ const certificates: Certificate[] = [
 const skills: Skill[] = [
   {
     category: "Languages",
-    skills: ["JavaScript, TypeScript", "HTML, CSS, SCSS", "PHP, Java, Kotlin", "Python"],
+    skills: ["JavaScript, TypeScript", "HTML, CSS, SCSS", "PHP, Java, Kotlin", "Python, C#",],
   },
   {
     category: SkillCategory.Frontend,
@@ -61,7 +61,7 @@ const skills: Skill[] = [
   },
   {
     category: SkillCategory.Backend,
-    skills: ["FastAPI, Flask", "WordPress, Laravel", "Express"],
+    skills: ["WordPress, Laravel", ".NET, .NET Core", "FastAPI, Flask", "Express"],
   },
   {
     category: SkillCategory.Database,
@@ -73,7 +73,7 @@ const skills: Skill[] = [
   },
   {
     category: SkillCategory.DevOps,
-    skills: ["GNU / Linux", "Docker", "Git"],
+    skills: ["Bash, Powershell", "GNU / Linux", "Docker", "Git"],
   },
 ];
 
