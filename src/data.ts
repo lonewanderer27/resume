@@ -80,7 +80,7 @@ const skills: Skill[] = [
 const careerProfile: CareerProfile = {
   title: "Ian James Puzon",
   description:
-    "As a Front-End Web Developer with one year of experience, I specialize in creating responsive and interactive web and mobile applications. I am highly adaptable and can learn any required technology with minimal supervision. I am also a team player who collaborates effectively yet can also work independently, prioritizing efficiency and timeliness in my tasks.",
+    "As a Full-Stack Web Developer with one year of experience, I specialize in creating responsive and interactive web and mobile applications. I am highly adaptable and can learn any required technology with minimal supervision. I am also a team player who collaborates effectively yet can also work independently, prioritizing efficiency and timeliness in my tasks.",
 };
 
 const experiences: Experience[] = [
