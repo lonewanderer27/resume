@@ -20,7 +20,7 @@ jobs:
 
       # Setup Webpage to PDF
       - name: Setup webpage to pdf action
-        uses: imbhargav5/puppeteer-pdf-action@master
+        uses: lonewanderer27/puppeteer-pdf-action@master
         with:
           url: https://lonewanderer27.github.io/resume
           output-file-path: Ian_James_Resume_GA.pdf
