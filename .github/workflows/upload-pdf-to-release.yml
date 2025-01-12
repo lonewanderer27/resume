@@ -54,5 +54,6 @@ jobs:
         with: 
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: Ian_James_Resume_GA.pdf
+          asset_name: Ian_James_Resume_GA.pdf
           overwrite: true
           tag: $TAG
