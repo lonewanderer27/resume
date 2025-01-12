@@ -1,8 +1,11 @@
 # My Resume | Astro
 
+A lightweight, mobile-responsive resume template built with Astro. This project supports dark mode and is highly customizable. Perfect for showcasing your professional experience, skills, and projects.
+<br><br>
+
 Copyright © 2024 Adriane James </br>
 Originally developed and designed by [Stavrospanakakis](https://github.com/Stavrospanakakis) </br>
-Astro version developed and improved by [lonewanderer27](https://github.com/lonewanderer27)
+Astro version developed by [lonewanderer27](https://github.com/lonewanderer27)
 
 
 ## Features
