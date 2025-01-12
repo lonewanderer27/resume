@@ -15,7 +15,11 @@ jobs:
           webPageURL: https://lonewanderer27.github.io/resume
           outputFile: "./Ian James Resume GA.pdf"
 
-      # Step 1: Set the date and time in GMT+8
+      # Clone our repo
+      - name: Clone our repo
+        uses: actions/checkout@v4
+
+      # Set the date and time in GMT+8
       - name: Get Date and Time in GMT+8
         id: get_datetime
         run: |
