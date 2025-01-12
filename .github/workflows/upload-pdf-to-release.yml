@@ -5,6 +5,8 @@ on:
     workflows: ["Deploy to GitHub Pages"]
     types:
       - completed
+  # Allows you to run this workflow manually from the Actions tab on GitHub.
+  workflow_dispatch:
 
 permissions:
   contents: write
