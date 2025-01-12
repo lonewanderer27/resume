@@ -1,16 +1,22 @@
 ---
 const { supportDarkMode, title } = Astro.props as { supportDarkMode: boolean, title: string };
-import { MoonIcon } from "astro-feather";
+import { MoonIcon, DownloadIcon } from "astro-feather";
 ---
 
 <div class="header">
-  <h1 class="title">{title}</h1>
-  <div>
+  <h1 class="title">{title}</h1>    
+  <div class="header--buttons">
+    <a 
+      id="download" 
+      title="Download PDF version of this resume"
+      href="https://github.com/lonewanderer27/resume/releases/latest/download/Ian_James_Resume_GA.pdf">
+      <DownloadIcon stroke="var(--fg-color)" />
+    </a>
     {supportDarkMode && (
       <input type="checkbox" id="switch" name="mode" class="toggle-dark"></input>
       <label for="switch" title="Toggle Dark Mode">
         <div id="moon">
-          <MoonIcon fill="var(--fg-color)" />
+          <MoonIcon stroke="var(--fg-color)" />
         </div>
       </label>
     )}
@@ -55,10 +61,17 @@ checkbox.addEventListener('change', () => {
         font-weight: bolder;
         text-transform: uppercase;
     }
+    .header--buttons {
+      display: flex;
+      #download {
+        margin-right: 10px;
+      }
+    }
     input[type="checkbox"] {
         width: 0;
         height:0;
         display: none;
+        margin-left: 5px
     }
     label {
         cursor: pointer;
