@@ -16,7 +16,7 @@ jobs:
         uses: misaelnieto/web_to_pdf_action@master
         with:
           webPageURL: https://lonewanderer27.github.io/resume
-          outputFile: "./Ian James Resume GA.pdf"
+          outputFile: "./Ian James - Resume GA.pdf"
 
       # Clone our repo
       - name: Clone our repo
