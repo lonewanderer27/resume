@@ -1,7 +1,10 @@
 name: Upload Resume PDF to Release
 
 on:
-  push
+  workflow_run:
+    workflows: ["Deploy to GitHub Pages"]
+    types:
+      - completed
 
 permissions:
   contents: write
@@ -11,16 +14,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Clone our repo
+      - name: Clone our repo
+        uses: actions/checkout@v4
+
       # Setup Webpage to PDF
       - name: Setup webpage to pdf action
         uses: misaelnieto/web_to_pdf_action@master
         with:
           webPageURL: https://lonewanderer27.github.io/resume
-          outputFile: "./Ian James - Resume GA.pdf"
-
-      # Clone our repo
-      - name: Clone our repo
-        uses: actions/checkout@v4
+          outputFile: Ian_James_Resume_GA.pdf
 
       # Set the date and time in GMT+8
       - name: Get Date and Time in GMT+8
@@ -50,6 +53,6 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with: 
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: "./Ian James - Resume GA.pdf"
+          file: Ian_James_Resume_GA.pdf
           overwrite: true
           tag: $TAG
