@@ -1,0 +1,48 @@
+name: Upload Resume PDF to Release
+
+on:
+  push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Setup Webpage to PDF
+      - name: Setup webpage to pdf action
+        uses: misaelnieto/web_to_pdf_action@master
+        with:
+          webPageURL: https://lonewanderer27.github.io/resume
+          outputFile: "./Ian James Resume GA.pdf"
+
+      # Step 1: Set the date and time in GMT+8
+      - name: Get Date and Time in GMT+8
+        id: get_datetime
+        run: |
+          # Set the timezone to Asia/Manila (GMT+8)
+          export TZ=Asia/Manila
+          
+          # Format: YYYYMMDD-HHMMSS
+          TAG=$(date +"%Y%m%d-%H%M%S")
+          echo "Generated Tag in GMT+8: $TAG"
+          echo "::set-output name=tag::$TAG"
+
+      # Create a new tag
+      - name: Create a new tag
+        run: |
+            TAG=${{ steps.get_datetime.outputs.tag }}
+            echo "Creating tag $TAG..."
+            git tag $TAG
+            git push origin $TAG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+      # Upload new release using tag
+      - name: Upload new release using tag
+        uses: svenstaro/upload-release-action@v2
+        with: 
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: "./Ian James - Resume GA.pdf"
+          overwrite: true
+          tag: $TAG
