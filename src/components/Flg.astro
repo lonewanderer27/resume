@@ -1,22 +1,32 @@
-<script lang="typescript">
-  function a() {
-    const b = window.location.href.replace(/^https?:\/\//, "");
-    const c = new Date().getTimezoneOffset();
-    const d = Math.abs(c);
-    const e = Math.floor(d / 60);
-    const f = c > 0 ? "-" : "+";
-    const g = "GMT" + f + e;
+---
+export function flg() {
+  const urlWithoutProtol = window.location.href.replace(/^https?:\/\//, "");
+  const offsetMinutes = new Date().getTimezoneOffset();
+  const absoluteOffsetMinutes = Math.abs(offsetMinutes);
+  const offsetHours = Math.floor(absoluteOffsetMinutes / 60);
+  const offsetSign = offsetMinutes > 0 ? "-" : "+";
+  const gmtOffset = "GMT" + offsetSign + offsetHours;
 
-    const h = "F";
-    const i = "L";
-    const j = "G";
-    const k = "_";
-    const l = h + i + j + k;
-    const m = b;
-    const n = "_" + g;
+  const part1_0 = "F";
+  const part1_1 = "L";
+  const part1_2 = "G";
+  const part1_3 = "_";
+  const part1 = part1_0+part1_1+part1_2+part1_3;
+  const part2 = urlWithoutProtol;
+  const part3 = "_" + gmtOffset;
 
-    return l + m + n;
+  return part1 + part2 + part3;
+}
+---
+
+<script>
+  import { flg } from "./Flg.astro";
+
+  declare global {
+    interface Window {
+      flg: typeof flg;
+    }
   }
 
-  window.flg = a;
+  window.flg = flg;
 </script>
