@@ -37,6 +37,12 @@ const references: Reference[] = [
 
 const certificates: Certificate[] = [
   {
+    title: "Flutter & Dart",
+    link: "https://raw.githubusercontent.com/lonewanderer27/resume/master/cert-udemy-flutter-adriane-james-puzon.pdf",
+    issuer: "Udemy",
+    date: "Mar 2025",
+  },
+  {
     title: "Learn React",
     link: "https://v2.scrimba.com/certificate-cert2CsEjr6BTPCjR2r6GqCgcfc4y5MpTb6twi",
     issuer: "Scrimba",
@@ -47,7 +53,7 @@ const certificates: Certificate[] = [
     link: "https://scrimba.com/certificate/u2Nz6eAV/gjavascript",
     issuer: "Scrimba",
     date: "Nov 2022",
-  },
+  }
 ];
 
 const skills: Skill[] = [
