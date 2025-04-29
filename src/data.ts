@@ -58,8 +58,12 @@ const certificates: Certificate[] = [
 
 const skills: Skill[] = [
   {
-    category: "Languages",
-    skills: ["Dart, JavaScript, TypeScript", "HTML, CSS, SCSS", "PHP, Java, Kotlin", "Python, C#",],
+    category: SkillCategory.MobileApp,
+    skills: ["Flutter, React Native", "Ionic, Capacitor, Cordova", "Android Studio"],
+  },
+  {
+    category: SkillCategory.DevOps,
+    skills: ["Bash, Powershell", "GNU / Linux", "Docker", "Git"],
   },
   {
     category: SkillCategory.Frontend,
@@ -70,16 +74,12 @@ const skills: Skill[] = [
     skills: ["WordPress, Laravel", ".NET, .NET Core", "FastAPI, Flask", "Express"],
   },
   {
+    category: "Languages",
+    skills: ["Dart, JavaScript, TypeScript", "HTML, CSS, SCSS", "PHP, Java, Kotlin", "Python, C#",],
+  },
+  {
     category: SkillCategory.Database,
     skills: ["PostgreSQL, MySQL", "MongoDB"],
-  },
-  {
-    category: SkillCategory.MobileApp,
-    skills: ["Flutter, React Native", "Ionic, Capacitor, Cordova", "Android Studio"],
-  },
-  {
-    category: SkillCategory.DevOps,
-    skills: ["Bash, Powershell", "GNU / Linux", "Docker", "Git"],
   },
 ];
 
