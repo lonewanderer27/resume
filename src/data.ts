@@ -91,6 +91,23 @@ const careerProfile: CareerProfile = {
 
 const experiences: Experience[] = [
   {
+    role: "Software Engineer I",
+    startDate: "Feb 2025",
+    endDate: "May 2025",
+    company: "Stratpoint Global Outsourcing Inc.",
+    companyLink: "https://stratpoint.com",
+    details: [
+      "Collaborated with senior developers in porting a production internal workspace booking app from native to Flutter, contributing over 300 feature commits, and 180 bug fixes.",
+      "Completed an intensive 8-week Flutter bootcamp, learning industry practices in cross-platform mobile development and building 7 mini-projects.",
+      "Presented a final project—a Netflix app clone—to HR and project heads to demonstrate skills acquired during the program."
+    ],
+    technologies: [
+      "Flutter",
+      "Clean Architecture",
+      "Domain-Driven Design",
+    ]
+  },
+  {
     role: "Full-Stack Web Developer",
     startDate: "Nov 2022",
     endDate: "Jan 2023",
