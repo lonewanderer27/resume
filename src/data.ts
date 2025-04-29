@@ -59,7 +59,7 @@ const certificates: Certificate[] = [
 const skills: Skill[] = [
   {
     category: "Languages",
-    skills: ["JavaScript, TypeScript", "HTML, CSS, SCSS", "PHP, Java, Kotlin", "Python, C#",],
+    skills: ["Dart, JavaScript, TypeScript", "HTML, CSS, SCSS", "PHP, Java, Kotlin", "Python, C#",],
   },
   {
     category: SkillCategory.Frontend,
@@ -75,7 +75,7 @@ const skills: Skill[] = [
   },
   {
     category: SkillCategory.MobileApp,
-    skills: ["Ionic, Capacitor, Cordova", "Android Studio", "React Native"],
+    skills: ["Flutter, React Native", "Ionic, Capacitor, Cordova", "Android Studio"],
   },
   {
     category: SkillCategory.DevOps,
