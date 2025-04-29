@@ -29,3 +29,4 @@ jobs:
         with:
           source-dir: ./dist/
           preview-branch: master
+          token: ${{ secrets.PR_PREVIEW_TOKEN }}
