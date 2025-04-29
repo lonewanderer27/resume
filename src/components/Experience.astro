@@ -27,9 +27,9 @@ const { experience } = Astro.props as { experience: Experience[] };
           ))}
         </ul>
 
-        <p class="technologies">
+        {exp.technologies.length > 1 && <p class="technologies">
           Technologies Used: {exp.technologies.join(", ")}
-        </p>
+        </p>}
 
         {/* {exp.references && exp.references.length > 0 && (
           <p class="references">
