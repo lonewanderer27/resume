@@ -26,12 +26,14 @@ import {
 import config from "../config";
 import References from "../components/References.astro";
 import Mock from "../components/Mock.astro";
+
+const useMockData = import.meta.env.USE_MOCK_DATA === "true";
 ---
 
 <Layout>
   <div class="container">
     {
-      config.useMockData ? (
+      (useMockData) ? (
         <Mock />
       ) : (
         <>

@@ -3,7 +3,6 @@ export type Config = {
   supportDarkMode: boolean;
   description: string;
   url: string;
-  useMockData?: boolean;
   // themeSkin: string;
 };
 
