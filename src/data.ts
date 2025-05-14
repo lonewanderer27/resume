@@ -108,29 +108,6 @@ const experiences: Experience[] = [
     ]
   },
   {
-    role: "Full-Stack Web Developer",
-    startDate: "Nov 2022",
-    endDate: "Jan 2023",
-    company: "OMP Security & Investigation Agency Inc. (OMPSIA)",
-    companyLink: "https://ompsecurity.com/",
-    details: [
-      "Redesigned the admin dashboard to improve its user experience, accessibility and ease of use to non-tech-savvy users such as security personnel.",
-      "Developed and maintained custom WordPress themes and plugins.",
-      "Enhanced website performance and security, ensuring reliable uptime.",
-      "Managed the migration from Yahoo Mail to a custom email solution.",
-      "Conducted hands-on training sessions for approximately 20 staff members on effective use of admin dashboard & email system.",
-    ],
-    technologies: [
-      "PHP",
-      "WordPress",
-      "MySQL",
-      "HTML",
-      "CSS",
-      "Bootstrap",
-      "JavaScript",
-    ],
-  },
-  {
     role: "Front-End Web Developer",
     startDate: "Nov 2022",
     endDate: "Feb 2023",
@@ -153,16 +130,15 @@ const experiences: Experience[] = [
   {
     role: "Full-Stack Web Developer",
     startDate: "June 2022",
-    endDate: "Oct 2022",
+    endDate: "January 2023",
     company: "ABC-RMO Security & Investigation Agency Inc. (ARSIA)",
     companyLink: "https://abcrmosecurity.com/",
     details: [
-      "Developed an admin interface for publishing security announcements.",
-      "Implemented a job application form to streamline security personnel recruitment.",
-      "Built a responsive website accessible on both mobile and desktop devices.",
-      "Launched the agency's first online presence on search engines, significantly improving visibility to potential clients and boosting click rates.",
-      "Managed the migration from Yahoo Mail to a custom email solution.",
-      "Conducted training sessions for approximately 50 employees on effective use of admin dashboard and email system.",
+      "Developed a responsive admin interface for publishing security announcements, streamline internal communication.",
+      "Implemented a job application form to simplify security personnel recruitment.",
+      "Led the agency’s first digital presence strategy, improving search visibility and increasing site traffic.",
+      "Spearheaded email system integration, replacing Yahoo Mail with a more robust custom email solution.",
+      "Conducted comprehensive training sessions for approximately 70 employees on using the admin dashboard and email system effectively.",
     ],
     technologies: [
       "PHP",
