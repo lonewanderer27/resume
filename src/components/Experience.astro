@@ -10,15 +10,15 @@ const { experience } = Astro.props as { experience: Experience[] };
 
     {experience.map((exp) => (
       <div class="experience-item">
-        <div class="role">
-          <span title={exp.roleLong}>{exp.role}</span>
-        </div>
-
         <div class="company">
           <span title={exp.companyLong}>{exp.company}</span>
           {exp.freelance && <span>(Freelance)</span>}
           {/* Display startDate only if it exists */}
           <span class="time">{exp.startDate ? `${exp.startDate} - ` : ""} {exp.endDate}</span>
+        </div>
+
+        <div class="role">
+          <span title={exp.roleLong}>{exp.role}</span>
         </div>
 
         <ul class="details">
@@ -50,12 +50,8 @@ const { experience } = Astro.props as { experience: Experience[] };
         @include header;
     }
     .experience-item {
-        .role {
-            @include sub-header;
-        }
         .company {
-            @include body-text;
-            font-weight: bold;
+            @include sub-header;
             .sister_company {
                 color: var(--fg-color-title-sm);
             }
@@ -64,6 +60,10 @@ const { experience } = Astro.props as { experience: Experience[] };
                 color: var(--fg-color-title-sm);
                 font-weight: 100;
             }
+        }
+        .role {
+            @include body-text;
+            font-weight: bold;
         }
         .details {
             @include body-text;
