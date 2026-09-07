@@ -4,20 +4,20 @@ import type { Volunteering } from "../types";
 const { volunteering } = Astro.props as { volunteering: Volunteering[] };
 ---
 
-{volunteering && (
+{volunteering && volunteering.length > 0 && (
   <section class="volunteering">
     <h2 class="title">Volunteering</h2>
     {volunteering.map((vol) => (
       <div class="volunteering-item">
-        <div class="role">
-          <span title={vol.roleLong}>{vol.role}</span>
-        </div>
         <div class="organization">
           <span title={vol.companyLong}>{vol.company}</span>
           <span class="time">
             {/* Display startDate only if it exists */}
           <span class="time">{vol.startDate ? `${vol.startDate} - `: ""} {vol.endDate}</span>
           </span>
+        </div>
+        <div class="role">
+          <span title={vol.roleLong}>{vol.role}</span>
         </div>
         <ul class="details">
           {/* {vol.details.join(', ')} */}
@@ -37,17 +37,17 @@ const { volunteering } = Astro.props as { volunteering: Volunteering[] };
     }
     .volunteering-item {
         margin-bottom: 20px;
-        .role {
-            @include sub-header;
-        }
         .organization {
-            @include body-text;
-            font-weight: bold;
+            @include sub-header;
             .time {
                 float: right;
                 color: var(--fg-color-title-sm);
                 font-weight: 100;
             }
+        }
+        .role {
+            @include body-text;
+            font-weight: bold;
         }
         .details {
             @include body-text;
