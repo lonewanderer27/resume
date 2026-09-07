@@ -10,9 +10,7 @@ const { education } = Astro.props as { education: Education[] };
     
     {education.map((ed) => (
       <div class="education-item">
-        <div class="degree">{ed.degree}</div>
-        <div class="university">{ed.institute}</div>
-        {ed.date && <div class="time">{ed.date}</div>}
+        <span class="degree">{ed.degree}</span>, {ed.institute}{ed.date && <> — {ed.date}</>}
       </div>
     ))}
   </section>
@@ -20,21 +18,14 @@ const { education } = Astro.props as { education: Education[] };
 
 <style lang="scss">
 .education {
-    margin-bottom: 20px;
     .title {
-        @include sub-header;
+        @include header;
     }
     .education-item {
-        margin-bottom: 20px;
+        @include body-text;
+        margin-top: 0;
         .degree {
-            @include body-text;
             font-weight: bold;
-        }
-        .university {
-            @include body-text;
-        }
-        .time {
-            @include body-text;
         }
     }
 }
