@@ -1,13 +1,33 @@
 ---
-const { supportDarkMode, title } = Astro.props as { supportDarkMode: boolean, title: string };
+import type { Contact } from "../types";
+
+const { supportDarkMode, title, contact } = Astro.props as { supportDarkMode: boolean, title: string, contact?: Contact };
 import { MoonIcon, DownloadIcon } from "astro-feather";
+
+const contactParts = [
+  contact?.address && { text: contact.address },
+  contact?.email && { text: contact.email, href: `mailto:${contact.email}` },
+  contact?.phone && { text: contact.phone, href: `tel:${contact.phone}` },
+  contact?.github && { text: `github.com/${contact.github}`, href: `https://github.com/${contact.github}` },
+  contact?.linkedin && { text: `linkedin.com/in/${contact.linkedin}`, href: `https://linkedin.com/in/${contact.linkedin}` },
+].filter(Boolean) as { text: string, href?: string }[];
 ---
 
 <div class="header">
-  <h1 class="title">{title}</h1>    
+  <h1 class="title">{title}</h1>
+  {contactParts.length > 0 && (
+    <p class="contact-line">
+      {contactParts.map((part, i) => (
+        <>
+          {i > 0 && " • "}
+          {part.href ? <a href={part.href}>{part.text}</a> : part.text}
+        </>
+      ))}
+    </p>
+  )}
   <div class="header--buttons">
-    <a 
-      id="download" 
+    <a
+      id="download"
       title="Download PDF version of this resume"
       href="https://github.com/lonewanderer27/resume/releases/latest/download/Ian_James_Resume_GA.pdf">
       <DownloadIcon stroke="var(--fg-color)" />
@@ -51,17 +71,31 @@ checkbox.addEventListener('change', () => {
 
 <style lang="scss">
 .header {
-    width: 90%;
+    width: 96%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
+    text-align: center;
     .title {
         color: var(--fg-color-dark);
         font-weight: bolder;
         text-transform: uppercase;
+        margin-bottom: 4px;
+    }
+    .contact-line {
+        @include body-text;
+        margin: 0;
+        a {
+            color: var(--fg-color-body);
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
     .header--buttons {
+      position: absolute;
+      top: 0;
+      right: 0;
       display: flex;
       #download {
         margin-right: 10px;
@@ -76,7 +110,7 @@ checkbox.addEventListener('change', () => {
     label {
         cursor: pointer;
         color: var(--fg-color-dark);
-        
+
     }
 }
 </style>
