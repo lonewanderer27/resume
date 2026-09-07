@@ -8,10 +8,11 @@ export type Config = {
 
 export type CareerProfile = {
   title: string;
-  description: string;
+  description?: string;
 }
 
 export type Contact = {
+  address?: string;
   email?: string;
   github?: string;
   linkedin?: string;
