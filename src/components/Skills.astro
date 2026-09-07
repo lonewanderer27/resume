@@ -6,14 +6,11 @@ const { skills } = Astro.props as { skills: Skill[] };
 
 {skills && (
   <section class="skills">
+    <div class="title">Skills</div>
     {skills.map((sks) => (
-      <div>
-        <div class="title">{sks.category}</div>
-        {sks.skills.map((sk) => (
-          <div class="skill">
-            {sk}
-          </div>
-        ))}
+      <div class="skill-row">
+        <span class="category">{sks.category}:</span>
+        <span class="skill-list">{sks.skills.join(", ")}</span>
       </div>
     ))}
   </section>
@@ -21,13 +18,19 @@ const { skills } = Astro.props as { skills: Skill[] };
 
 <style lang="scss">
 .skills {
-    margin-bottom: 20px;
     .title {
-        margin-top: 20px;
-        @include sub-header;
+        @include header;
     }
-    .skill {
+    .skill-row {
         @include body-text;
+        margin-top: 0;
+        .category {
+            font-weight: bold;
+            color: var(--fg-color);
+        }
+        .skill-list {
+            margin-left: 4px;
+        }
     }
 }
 </style>

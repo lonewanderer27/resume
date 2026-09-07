@@ -34,12 +34,6 @@ body {
     .container-block {
         width: 90%;
         margin: 0 auto;
-        /* padding:20px; */
-        display: grid;
-        grid-template-columns: 2fr 5fr;
-        .sidebar {
-            margin-top: 20px;
-        }
     }
 }
 
@@ -86,6 +80,7 @@ body {
     /* set page size to A4 */
     @page {
         size: A4;
+        margin: 10mm;
     }
     /* revert to black and white default theme */
     :root {
@@ -102,12 +97,8 @@ body {
         box-shadow: none;
         background-color: #ffffff;
         width: 1000px;
-        .container-block {
-            padding:0;
-            
-        }
         .header {
-            input, label, a {
+            .header--buttons {
                 visibility: hidden;
             }
         }
@@ -124,14 +115,6 @@ body {
     }
     .container {
         box-shadow: none;
-        .container-block {
-
-            .sidebar {
-                div {
-                    text-align: left;
-                }                
-            }
-        }
     }
 }
 
@@ -139,9 +122,6 @@ body {
     .container {
         padding: 0 !important;
         margin: 0 !important;
-        .container-block {
-            display: block;
-        }
     }
     .header {
         display: block;

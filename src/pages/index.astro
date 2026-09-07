@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
-import Contact from "../components/Contact.astro";
 import Languages from "../components/Languages.astro";
 import Education from "../components/Education.astro";
 import Certificates from "../components/Certificates.astro";
@@ -40,23 +39,19 @@ const useMockData = import.meta.env.USE_MOCK_DATA === "true";
           <Header
             title={careerProfile.title}
             supportDarkMode={config.supportDarkMode}
+            contact={contact}
           />
           <div class="container-block">
-            <div class="sidebar">
-              <Contact contact={contact} />
-              <Languages languages={languages} />
-              <Education education={education} />
-              <References references={references} />
-              <Certificates certificates={certificates} />
-              <Skills skills={skills} />
-            </div>
-            <div class="main">
-              <CareerProfile profile={careerProfile.description} />
-              <Experience experience={experiences} />
-              <Publications />
-              <Projects projects={projects} />
-              <Volunteering volunteering={volunteering} />
-            </div>
+            <CareerProfile profile={careerProfile.description} />
+            <Experience experience={experiences} />
+            <Certificates certificates={certificates} />
+            <Education education={education} />
+            <Publications />
+            <Projects projects={projects} />
+            <Skills skills={skills} />
+            <Volunteering volunteering={volunteering} />
+            <Languages languages={languages} />
+            <References references={references} />
           </div>
         </>
       )
